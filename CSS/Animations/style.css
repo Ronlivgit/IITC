@@ -1,0 +1,279 @@
+body {
+    position: relative;
+    width: vw;
+    height: 99vh;
+    border: 1px solid #000;
+    overflow-x:hidden ;
+    overflow-y: hidden;
+    color: #000;
+    text-align: center;
+}
+@keyframes q1 {
+    to {background-color: rgb(0, 0, 255);}
+}
+
+@keyframes q2 {
+    25% {background-color: rgb(255, 255, 0);}
+    75% {background-color: rgb(255, 50, 255);}
+    75% {background-color: rgb(255, 0, 0);}
+    100% {background-color: rgb(0, 0, 0);}
+}
+
+@keyframes q3 {
+    from {width: 80px; height: 80px;}
+    to {width: 100px; height: 120px; border-radius: 99%;}
+}
+
+@keyframes q3 {
+    from {width: 80px; height: 80px;}
+    to {width: 100px; height: 120px; border-radius: 99%;}
+}
+
+@keyframes q4 {
+    20% {width: 80px; height: 110px;}
+    40% {width: 100px; height: 130px; border-radius: 99%;}
+    60% {width: 120px; height: 150px; border-radius: 99%;}
+    80% {width: 100px; height: 130px; border-radius: 99%;}
+    100% {width: 80px; height: 110px; border-radius: 99%;}
+}
+
+@keyframes q5 {
+    33%{margin-left: 0vw;}
+    66%{margin-left: 94vw;}
+    100%{margin-left: 0%;}
+}
+
+@keyframes q6 {
+    25%{margin-left: 96vw;margin-top: 0vh;}
+    50%{margin-left: 96vw;margin-top: 34vh;}
+    75%{margin-left: 0vw; margin-top: 34vh;}
+    100%{margin-left: 0vw;margin-top: 0vh;}
+}
+
+@keyframes q7 {
+    25%{margin-left: 50vw;margin-top: 0vh;}
+    50%{margin-left: 50vw;margin-top: 50vh;}
+    75%{margin-left: 0vw; margin-top: 50vh;}
+    100%{margin-left: 0vw;margin-top: -45vh;}
+}
+
+@keyframes q8 {
+    25%{transform: rotatex(-20deg);}
+    50%{transform: rotatex(-50deg);}
+    75%{transform: rotatex(20deg);}
+    100%{transform:rotatex(50deg);}
+}
+
+@keyframes q9 {
+    0%{margin-top: -100px; transform: scale(1.0);filter: drop-shadow(4px 4px 4px #000);}
+    25%{margin-top: 100px; transform: scale(1.1);filter: drop-shadow(8px 8px 8px #000)}
+    50%{margin-top: 300px; transform: scale(1.2);filter: drop-shadow(10px 12px 12px #000)}
+    75%{margin-top: 500px; transform: scale(1.3);filter: drop-shadow(-4px 16px 16px #000)}
+    100%{margin-top: 700px; transform: scale(1.4);filter: drop-shadow(-8px 18px 18px #000)}
+}
+
+@keyframes q10 {
+    25%{transform: scale(1.25);}
+    50%{transform: scale(1.75);}
+    75%{transform: scale(1.25);}
+    100%{transform: scale(1);}
+}
+
+@keyframes q11p2 {
+    25%{margin-left: 368px;margin-top: -18px;}
+    50%{margin-left: 368px;margin-top: 250px;}
+    75%{margin-left: 0vw; margin-top: 250px;}
+    100%{margin-left: 0vw;margin-top: -18px;}
+}
+
+@keyframes DVD {
+    10%{transform: translate(1130px,500px); color: blue;}
+    10.1%{color: #000;}
+    20%{transform: translate(0px,-560px); color: #000;}
+    20.1%{transform: translate(10px,-550px); color: #f80a0a}
+    30%{transform: translate(-1050px,-500px); color: #f80a0a}
+    30.1%{transform: translate(-1040px,-490px); color: #c8ff02}
+    40%{transform: translate(-600px,600px); color: #c8ff02}
+    40.1%{transform: translate(-600px,590px); color: #a10264}
+    50%{transform: translate(280px,-560px); color: #a10264}
+    50.1%{transform: translate(280px,-550px); color: #00d9ff}
+    60%{transform: translate(1130px,0px); color: #00d9ff}
+    60.1%{transform: translate(1120px,0px); color: #5398ff}
+    70%{transform: translate(450px,600px); color: #5398ff}
+    70.1%{transform: translate(440px,590px); color: #ffb1ee}
+    80%{transform: translate(-1050px,240px); color: #ffb1ee}
+    80.1%{transform: translate(-1040px,240px); color: #51521f}
+    90%{transform: translate(200px,-560px); color: #51521f}
+    90.1%{transform: translate(200px,-550px); color: #0f4111}
+    100%{transform:translate(1140px,590px); color: #0f4111}
+
+}
+
+#q1 {
+    color: #000;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(255,0,0);
+    animation-name:q1 ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+#q2 { 
+    color: #000;
+    background-color: rgb(0, 255,0);
+    width: 80px;
+    height: 80px;
+    animation-name:q2 ;
+    animation-duration: 5s;
+    animation-iteration-count: 3;
+}
+
+#q3 {
+    color: #ffff;
+    position: absolute;
+    background-color: #000;
+    width: 80px;
+    height: 80px;
+    animation-name:q3 ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform: translate(200px,10px);
+    margin-bottom: 50px;
+}
+
+#q4 {
+    color: #000;
+    position: absolute;
+    border-radius: 99%;
+    border: 1px solid #000;
+    background-color: aqua;
+    width: 80px;
+    height: 110px;
+    animation-name:q4 ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform: translate(20px,50px);
+}
+
+#q5 {
+    color: #000;
+    border: 1px solid #000;
+    background-color: rgb(111, 247, 0);
+    width: 100px;
+    height: 100px;
+    animation-name:q5 ;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    transform: translate(0px,300px);
+}
+
+#q6 {
+    color: #000;
+    position:absolute;
+    border: 1px solid #000;
+    background-color: rgb(250, 247, 80);
+    width: 100px;
+    height: 100px;
+    animation-name:q6 ;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    transform: translate(0px,500px);
+}
+
+#q7 {
+    color: #000;
+    position: absolute;
+    background-color: rgb(0, 247, 180);
+    width: 100px;
+    height: 100px;
+    animation-name:q7 ;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    transform: translate(0px,300px);
+}
+
+#q8 {
+    color: #000;
+    position: absolute;
+    background-color: brown;
+    width: 80px;
+    height: 100px;
+    animation-name: q8;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    margin-top: 30vh;
+    margin-left: 30vw;
+    box-shadow:10px 15px black;
+}
+
+#q9 {
+    color: #ffff;
+    position: absolute;
+    background-image: url(football.jpeg);
+    background-size: auto;
+    background-position: auto;
+    background-repeat: no-repeat;
+    width: 220px;
+    height: 215px;
+    border-radius: 99%;
+    margin-left:70vw;
+    margin-top:-20vh ;
+    animation-name: q9;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#q10 {
+    text-align: center;
+    padding: 8px;
+    margin: 8px;
+    position: absolute;
+    margin-left: 30%;
+    margin-top: 10%;
+    overflow:auto;
+    width: auto;
+    height: 100px;
+    text-shadow: 2px 2px 6px red, 6px 6px 12px yellow, 9px 9px 18px rgb(3, 0, 3);
+    animation-name: q10;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+#q11 {
+    position: relative;
+    background-color:rgb(255, 0, 0);
+    height: 350px;
+    width: 450px;
+    margin-left: 20vw;
+    margin-top: 50vh;
+}
+
+#q11p2 {
+    position: absolute;
+    border: 1px solid #000;
+    background-color: #ffff;
+    height: 80px;
+    width: 80px;
+    margin-top: -18px;
+    animation-name: q11p2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+
+#DVD {
+    text-align: center;
+    font-size: 180px;
+    color: blue;
+    width: 400px;
+    height: 400px;
+    margin-top: 40vh;
+    margin-left: 40vw;
+    animation-name: DVD ;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+}
+
+
+

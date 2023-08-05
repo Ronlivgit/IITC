@@ -1,0 +1,19 @@
+body {
+    background-image: url(luffyg5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+#q4q5 {
+    background-color: rgb(90, 221, 133);
+    border: 2px solid rgb(121, 2, 121);
+    border-radius: 50%;
+}
+
+#imglmnt {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    width: 99%;
+    height: 99%;
+}

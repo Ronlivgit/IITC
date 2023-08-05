@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#q2 {
+    display: flex;
+    width: 90vw;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-image: url(sv1.jpg) ,url(sv2.jpg) ,url(sv3.jpg);
+    background-size: 33% 100%, 33% 100%, 33% 100%;
+    background-position: top left, top center, top right;
+    animation-name: q2sliders;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+/* div {
+    border: 1px solid #ffff;
+    width: 80vw;
+    height: 96vh;
+    animation-name: q2sliders;
+    animation-duration: 15s;
+    animation-iteration-count: 1;
+    background-image: url(sv1.jpg) ,url(sv2.jpg) ,url(sv3);
+    background-size: 33% 100%, 33% 100%, 33% 100%;
+    background-position: top left, top center, top right;
+} */
+
+@keyframes q2sliders {
+    0%,16% {background-image: url(sv1.jpg) ,url(sv2.jpg) ,url(sv3.jpg);}
+    17%, 33% {background-image:url(sv4.jpg) ,url(sv5.jpg), url(sv6.jpg)}
+    34%, 50%{background-image:url(sv7.jpg) ,url(sv8.jpg), url(sv9.jpg)}
+    51%, 67% {background-image:url(sv7.jpg) ,url(sv8.jpg), url(sv9.jpg)}
+    68%, 84% {background-image:url(sv4.jpg) ,url(sv5.jpg), url(sv6.jpg)}
+    85%, 100% {background-image: url(sv1.jpg) ,url(sv2.jpg) ,url(sv3.jpg);}
+}

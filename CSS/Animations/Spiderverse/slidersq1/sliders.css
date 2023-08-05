@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#q1 {
+    display: flex;
+    width: 70vw;
+    height: 95vh;
+    animation-name: slide1by1;
+    animation-duration: 15s;
+    animation-iteration-count: 1;
+    background-image: url(sv1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+@keyframes slide1by1 {
+    1%, 14%, 100% {background-image: url(sv1.jpg);}
+    15%, 28% {background-image: url(sv2.jpg);}
+    30%, 39%{background-image: url(sv3.jpg);}
+    40%, 49%{background-image: url(sv4.jpg);}
+    50%, 59% {background-image: url(sv5.jpg);}
+    60%, 69% {background-image: url(sv6.jpg);}
+    70%, 79% {background-image: url(sv7.jpg);}
+    80%, 89% {background-image: url(sv8.jpg);}
+    90%, 99% {background-image: url(sv9.jpg);}
+}
+

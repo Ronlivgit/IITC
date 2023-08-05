@@ -1,0 +1,21 @@
+body {
+    background-color: red;
+}
+
+#q4q5 {
+    background-color: rgb(255, 255, 255);
+    border: 4px dotted #06f726;
+}
+
+img {
+    width: 40%;
+    height: 20%;
+}
+
+#imglmnt {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    width: 99%;
+    height: 99%;
+}

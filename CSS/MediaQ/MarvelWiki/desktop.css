@@ -1,0 +1,89 @@
+@media screen and (min-width:650px) {
+    #navbar {
+        padding: 4px;
+        font-size: 2rem;
+    }
+
+    .mlogo {
+        width: 3vw;
+        height: 4.2vh;
+        margin-left: 94%;
+    }
+
+    i {
+        font-size: 4rem;
+        margin: 8px;
+        padding: 4px;
+        text-decoration: none;
+        color: rgb(230, 36, 41);
+        background-color: white;
+        opacity: 80%;
+    }
+
+    #homesumup{
+        font-size: 2rem;
+    }
+    .homeminih {
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+    .hometitl {
+        font-size: 3.5rem;
+        font-weight: bold;
+    }
+
+    #navbar a {
+        font-size: 1.5rem;
+    }
+
+    .vids {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    #vidspage iframe {
+        height: 20vh;
+        width: 22vw;
+        margin-top: 1vh;
+    }
+
+    #moviespage {
+        width: 99%;
+        height: 99%;
+    }
+    
+    .movies {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-evenly;
+        font-size: 1.2rem;
+    }
+    
+    .movies img {
+        width: 20vw;
+        height: 20vh;
+        margin-top: 2vh;
+        filter: saturate(1.8);
+    }
+
+    #moviesfotr{
+        height: 3vh;
+        width: 100%;
+        color: wheat;
+        margin-top: 1vh;
+    }
+
+    .movies p {
+        text-align: center;
+    }
+    
+    #aboutpage h1 {
+        font-size: 3.5rem;
+    }
+    
+    #aboutpage p {
+        font-size: 2rem;
+    }
+}

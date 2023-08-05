@@ -1,0 +1,53 @@
+@keyframes q5sliders {
+    33% {background-image: url(sv1.jpg) ,url(sv2.jpg) ,url(sv3.jpg);}
+    67% {background-image:url(sv4.jpg) ,url(sv5.jpg), url(sv6.jpg)}
+    100%{background-image:url(sv7.jpg) ,url(sv8.jpg), url(sv9.jpg)}
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.why {
+    display: flex;
+    width: 90vw;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-image: url(sv1.jpg) ,url(sv2.jpg) ,url(sv3.jpg);
+    background-size: 33% 100%, 33% 100%, 33% 100%;
+    background-position: top left, top center, top right;
+    animation-name: q5sliders;
+    animation-duration: 4.5s;
+    animation-iteration-count: 1;
+}
+
+.left_arrow {
+    position: absolute;
+    margin-top:47.5vh ;
+    margin-left: -2vw;
+    z-index: 99;
+}
+
+.right_arrow {
+    position: absolute;
+    margin-top: 47.5vh;
+    margin-left: 91vw;
+}
+
+
+.left_arrow:hover ~ .why {
+    animation-name: q5sliders;
+    animation-duration: 4.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+
+}
+
+.right_arrow:hover ~ .why {
+    animation-name: q5sliders;
+    animation-duration: 4.5s;
+    animation-iteration-count: infinite;
+}

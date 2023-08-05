@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.q4 {
+    display: flex;
+    width: 80vw;
+    height: 95vh;
+}
+
+.why { 
+    display: flex;
+    width: 80vw;
+    height: 95vh;
+    background-image: url(sv1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
+
+.left_arrow {
+    position: absolute;
+    margin-top:47.5vh ;
+    z-index: 99;
+}
+
+.right_arrow {
+    position: absolute;
+    margin-top: 47.5vh;
+    margin-left: 79vw;
+}
+
+
+.left_arrow:hover ~ .why {
+    animation-name: hoverslide;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+.right_arrow:hover ~ .why {
+    animation-name: hoverslide;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+
+@keyframes hoverslide {
+    0%, 10%, 100% {background-image: url(sv1.jpg);}
+    20% {background-image: url(sv2.jpg);}
+    30% {background-image: url(sv3.jpg);}
+    40% {background-image: url(sv4.jpg);}
+    50% {background-image: url(sv5.jpg);}
+    60% {background-image: url(sv6.jpg);}
+    70% {background-image: url(sv7.jpg);}
+    80% {background-image: url(sv8.jpg);}
+    90% {background-image: url(sv9.jpg);}
+}

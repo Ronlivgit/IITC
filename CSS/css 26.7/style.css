@@ -1,0 +1,160 @@
+#q1 {
+    border: 1px solid #000;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(0,255,0);
+    transition-duration: 6s;
+}
+
+#q1:hover {
+    background-color: rgb(255,255,0);
+}
+
+#q2 {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ffff;
+    background-color: rgb(0,0,255);
+    border-radius: 100%;
+    transition-duration: 8s;
+}
+
+#q2:hover { 
+    border-radius: 0%;
+    background-color: #000;
+    width: 200px;
+    height: 100px;
+    color: #ffff;
+}
+
+#q3 {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255,0,0);
+    transition-duration: 4s;
+}
+
+#q3:hover {
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    background-color: rgb(0,255,0);
+}
+
+/* question 4 */
+body {
+    background-color: rgb(255,120,255);
+    transition: 5s;
+}
+
+body:hover { 
+    background-color: rgb(122, 122, 122);
+}
+
+#q5 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: aquamarine;
+    margin-left:200px;
+    margin-top: 500px;
+    transition-duration: 1s;
+}
+
+#q5:hover {
+    background-color: #000;
+    margin-top: -320px;
+    margin-left: -10px;
+    transition-duration: 6s;
+}
+
+#q6 {
+    position: absolute;
+    margin-left:50vw;
+    border: 1px solid #ffff;
+    width: 30%;
+    height: 30%;
+}
+
+#q6p2 {
+    position: relative;
+    width: 30%;
+    height: 30%;
+    border: 1px solid #000;
+    transition-duration: 2s;
+}
+
+#q6p2:hover{
+    position: relative;
+    margin-top: 32.65%;
+}
+
+#q7 {
+    position: absolute;
+    border: 1px solid #000;
+    background-color: #000;
+    height: 80px;
+    width: 80px;
+    margin-left: 50%;
+    margin-bottom: 50%;
+    color: #ffff;
+}
+
+#q8 {
+    position: fixed;
+    background-color: purple;
+    margin-left: 50%;
+    margin-bottom: 50%;
+    height: 50px;
+    width: 50px;
+    color: red;
+}
+
+#q9 { 
+    position: absolute;
+    border: 1px solid #000;
+    height: 30%;
+    width: 30%;
+    margin-top: 400px;
+    margin-left: 800px;
+}
+
+#q9p2 {
+    position: relative;
+    border: 1px solid red;
+    height: 30%;
+    width: 30%;
+    background-color: yellow;
+    transition-duration: 3s;
+    margin-top: 252px;
+}
+
+#q9p2:hover {
+    border-radius: 50%;
+    background-color: red;
+    margin-top: -20px;
+}
+
+#q11 {
+    height: 200px;
+    width: 200px;
+    background-image: url(barney.jpeg);
+    transition: ease-in,4s
+}
+
+#q11:hover {
+    opacity: 0%;
+}
+
+#q10 {
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    transition: ease-in,4s
+}
+
+#q10:hover {
+    background-color: yellow;
+    transition: ease-in,3s;
+    background-color: red;
+}

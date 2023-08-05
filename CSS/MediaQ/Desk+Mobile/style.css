@@ -1,0 +1,52 @@
+body {
+    height: 99%;
+    width: 99%;
+    color: blue;
+    overflow:auto;
+}
+
+img {
+    width: 30vw;
+    height: 30vh;
+}
+
+#q4q5 {
+    position: absolute;
+    height: 5%;
+    width: 5%;
+}
+
+#imglmnt {
+    display: flex;
+    justify-content: space-evenly;
+    width: 99%;
+    height: 99%;
+}
+
+#luffy:hover {
+    filter:contrast(150%)
+}
+
+#zoro:hover {
+    filter: invert(60%)
+}
+
+#sanji:hover {
+    filter: opacity(40%)
+}
+
+#law:hover {
+    filter:hue-rotate(90deg)
+}
+
+#shanks:hover {
+    filter:blur(10px)
+}
+
+#brook:hover {
+    filter: grayscale(100%)
+}
+
+#usopp:hover {
+    filter:saturate(5)
+}

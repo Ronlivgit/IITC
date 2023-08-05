@@ -1,0 +1,23 @@
+body, html {
+    background-image: url(beach.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 99%;
+}
+
+@keyframes kirby {
+    20%{transform:translate(50px,1150px);}
+    40%{transform:translate(150px,1150px);}
+    60%{transform:translate(250px,1150px);}
+    80%{transform:translate(350px,1150px);}
+    100%{transform:translate(450px,1150px);}
+}
+
+#kirb {
+    position: absolute;
+    transform: translate(0px,1150px);
+    animation-name: kirby;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
