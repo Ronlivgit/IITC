@@ -86,4 +86,14 @@
     #aboutpage p {
         font-size: 2rem;
     }
+
+    .btn-dark {
+        margin-top: 2vh;
+    }
+
+    #contactpage {
+        position: absolute;
+        width: 30vw;
+        transform: translate(32vw,25vh);
+    }
 }
