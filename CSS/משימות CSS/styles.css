@@ -1,0 +1,239 @@
+#q1 {
+    border: 2px solid;
+    text-align: justify;
+    width: 300px;
+    padding: 10px;
+    height: 420px;
+    color: red;
+}
+
+#q2 {
+    text-align: right;
+}
+
+#q3 {
+    text-decoration: none;
+}
+
+#q4 {
+    text-align: right;
+    text-shadow: 2px 2px rgb(247, 7, 7);
+
+}
+
+#q5 {
+    text-align: right;
+}
+
+#q6 {
+    font-style: italic;
+}
+
+#q7 {
+    font-size: 30px;
+}
+
+#q7x2 {
+    font-size: 200%;
+}
+
+#i1 {
+    color: rgb(255, 0, 0);
+    font-size: 12px;
+}
+
+#i2 {
+    color: rgb(255, 255, 0);
+    font-size: 22px;
+}
+
+#i3 {
+    color: rgb(255, 0, 255);
+    font-size: 32px;
+}
+
+#q10 {
+    color: rgb(255, 255, 255);
+    border: 2px solid;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(0, 0, 255);
+    position: absolute;
+}
+
+#q11 {
+    color: rgb(255, 255, 255);
+    border: 2px solid;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(0, 0, 255);
+    position: fixed;
+    left: 300px;
+}
+
+#barney {
+    position:relative;
+    bottom: -100px
+}
+
+#barney1 {
+    position: relative;
+    bottom: -100px;
+    right: 250px
+}
+
+#barney1:hover {
+    z-index: -1;
+}
+
+.q16 {
+    height: 200px;
+    border: 1px solid rgb(0, 0, 0);
+    width: 20vw;
+    text-align: center;
+    font-size: 32px;
+    float: left;
+    transform: translate(0px,1080px);
+}
+
+#q17 {
+    border: 1px solid rgb(255, 255, 255);
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 0, 255);
+    animation-name: q17;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes q17 {
+    to {background-color: rgb(0, 255, 0);}
+}
+
+#q18 {
+    border: 1px solid rgb(255, 255, 255);
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 0, 255);
+    animation-name: q18;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes q18 {
+    33% {background-color: rgb(0, 255, 0);}
+    66% {background-color: rgb(255, 255, 0);}
+    100% {background-color: rgb(255, 0, 0);}
+}
+
+#q19 {
+    opacity: 100%;
+    width: 120px;
+    height: 120px;
+    animation-name: q19;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transform: translate(0px,80px);
+}
+
+@keyframes q19 {
+    to {opacity: 0%;}
+}
+
+#q20 {
+    width: 120px;
+    height: 120px;
+    filter: blur(5px);
+    animation-name: q20;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transform: translate(10px,80px);
+}
+
+@keyframes q20 {
+    to {filter: hue-rotate(90deg);}
+}
+
+#q21 {
+    width: 120px;
+    height: 120px;
+    filter: sepia(0%);
+    animation-name: q21;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transform: translate(10px,80px);
+}
+
+@keyframes q21 {
+    to {filter: sepia(100%);}
+}
+
+#q22 {
+    transform: translate(10px,150px);
+    text-align: center;
+    border: 1px solid rgb(0, 0, 0);
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 103, 2);
+    animation-name: q22;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+@keyframes q22 {
+    50% {background-color: rgb(255, 0, 212); left:100px; top:0px ;}
+    100% {background-color: rgb(255, 0, 212); right:0px; top:0px ;}
+}
+
+#q23 {
+    transform: translate(10px,180px);
+    text-align: center;
+    border: 1px solid rgb(0, 0, 0);
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 0, 0);
+    animation-name: q23;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+@keyframes q23 {
+    0% {background-color: rgb(255, 0, 0); right:0px; top:0px ;}
+    33% {background-color: rgb(0, 255, 0); right:0px; top:50px ;}
+    66% {background-color: rgb(255, 255,0); right:0px; top:100px ;}
+    100% {background-color: rgb(255, 0, 212); right:0px; top:0px ;}
+}
+
+#q24 {
+    width: 120px;
+    height: 120px;
+    animation-name: q24;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transform: translate(10px,80px);
+    filter:drop-shadow(12px 12px 14px black)
+}
+
+@keyframes q24 {
+    50% {filter:drop-shadow(12px 12px 14px rgb(255, 255, 0)); blur:100%}
+    100% {filter:drop-shadow(12px 12px 14px rgb(0, 0, 0)); blur:0%}
+}
+
+#q25 {
+    width: 120px;
+    height: 120px;
+    animation-name: q25;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transform: translate(20px,80px);
+}
+
+@keyframes q25 {
+    25% {filter: blur(5px);}
+    50% {filter: blur(10px);}
+    75% {filter: blur(5px);}
+    100% {filter: blur(0px);}
+}

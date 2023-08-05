@@ -1,0 +1,41 @@
+.clr {
+    border: 2px solid;
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    transition: all 5s ease-out;
+    text-align:center;
+}
+
+.clr:hover {
+    color: black;
+    background-color: black;
+}
+
+.heig {
+    align-items: right;
+    border: 2px solid;
+    height: 50px;
+    width: 50px;
+    transform: translate(50px,200px);
+}
+
+.heig:hover {
+    height: 500px;
+    transition: all 5s ease-in;
+}
+
+.chng {
+    border: 2px solid;
+    width: 100px;
+    height: 100px;
+    transform: translate(400px,600px);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.chng:hover {
+    height:200px;
+    width: 300px;
+    transition: all 5s ease-out;
+}

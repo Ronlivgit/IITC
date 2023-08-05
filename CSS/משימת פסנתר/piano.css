@@ -1,0 +1,65 @@
+body {
+    background-image: url(piano.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+h1 {
+    font-size: 100px;
+    margin: 16px;
+    padding: 26px;
+    width: 35%;
+    text-align: left;
+    color: rgba(255, 0, 0, 0.753);
+}
+.wtiles {
+    width: 600px;
+    height: 50px;
+    border: 0.1px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    padding: 0px;
+    text-align: end;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+}
+
+.wtiles:hover {
+    box-shadow: 4px 8px color(srgb 0 0 0);
+    inset: auto;
+    opacity: 70%;
+}
+
+.wtiles:hover {
+    color: rgb(0, 0, 0);
+}
+
+.btiles1 {
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    width: 250px;
+    height: 35px;
+    margin: 15px;
+    padding: 2px;
+    transform: translate(0px,-550px);
+}
+
+.btiles2 {
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    width: 250px;
+    height: 35px;
+    margin: 15px;
+    padding: 0px;
+    transform: translate(0px,-465px);
+}
+
+.btiles3 {
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    width: 250px;
+    height: 35px;
+    margin: 15px;
+    padding: 2px;
+    transform: translate(0px,-380px);
+}
