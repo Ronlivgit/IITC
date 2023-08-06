@@ -1,0 +1,47 @@
+@media screen and (max-width:650px) {
+    #Gridproj {
+        display: grid;
+        height: 99vh;
+        width: 99vw;
+        grid-template-columns:35% 35% 30%;
+        grid-template-rows:45% 45% 10%;
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "main main main"
+        "footer footer footer";
+        overflow: hidden;
+    }
+
+    .header > div { 
+        font-size: 2rem;
+    }
+    
+    .sidebar > div {
+        font-size: 1.4rem;
+    }
+
+    .main {
+        flex-direction: row;
+        height: 80vh;
+        width: 90vw;
+        grid-column: 1 / span 4;
+    }
+
+    .main > div {
+        height: 22vh;
+        width: 25vw;
+    }
+
+    img {
+        height: 20vh;
+        width: 22vw;
+        margin-top: 1vh;
+    }
+
+    .main p {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+}

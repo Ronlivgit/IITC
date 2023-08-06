@@ -1,0 +1,33 @@
+@media screen and (min-width:651px) {
+    .header > div { 
+        font-size: 2rem;
+    }
+    
+    .sidebar > div {
+        font-size: 1.4rem;
+    }
+
+    .main {
+        flex-direction: row;
+        height: 80vh;
+        width: 90vw;
+    }
+
+    .main > div {
+        height: 22vh;
+        width: 25vw;
+    }
+
+    img {
+        height: 20vh;
+        width: 22vw;
+        margin-top: 1vh;
+    }
+
+    .main p {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    
+}
