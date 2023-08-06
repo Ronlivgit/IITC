@@ -1,9 +1,12 @@
 body {
     width: 99%;
-    height: 95%;
+    height: 96vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(./jpgs+icons/marvelback.jpeg);
+    filter: contrast(120%);
+    font-weight: 650;
+
 }
 
 header {
@@ -21,14 +24,13 @@ main {
     height: 85vh;
     margin-left: 0.5vw;
     color: rgb(230, 36, 41);
-    text-shadow: 4px 4px 4px black;
+    text-shadow: 6px 6px 6px black;
 }
 
 footer {
     height: 3vh;
     width: 100%;
     color: wheat;
-    margin-top: 1vh;
 }
 
 .mlogo {
@@ -50,6 +52,10 @@ footer {
     font-weight: bold;
 }
 
+#homemain {
+    height: 82vh;
+}
+
 header a{
     margin-top: 0.6vh;
     text-decoration: none;
@@ -65,8 +71,8 @@ i {
 
 #homesumup{
     margin-left: 0.2vw;
-    font-weight: bold;
-    color: rgb(230, 36, 41);
+    font-weight: 650;
+    color: #ffff;
     overflow: hidden;
 }
 
@@ -84,6 +90,12 @@ i {
     width: 99%;
     height: 99%;
     color: #ffff;
+}
+
+.movies {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-evenly;
 }
 
 #aboutpage h1 {
@@ -117,18 +129,27 @@ input[type=text]:focus {
 .form-check {
     margin-top:1vh
 }
-/* .movies {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-evenly;
-    font-size: 1.2rem;
-    text-overflow:ellipsis;
+
+#upgif {
+    height: 10vh;
+    position: absolute;
+    animation: pointergif 3s 1 ;
 }
 
-.movies img {
-    width: 20vw;
-    height: 20vh;
-    margin-top: 2vh;
-    filter: saturate(1.8);
-} */
+@keyframes pointergif {
+    0% {opacity: 10%;}
+    100% {opacity: 100%;}
+}
+
+.spigif {
+    position: fixed;
+    animation: spidergif 10s ;
+    animation-iteration-count: 1;
+    filter: opacity(0%);
+}
+
+@keyframes spidergif {
+    0% {opacity: 0%; filter: blur(3px);}
+    99% {opacity: 100%;filter: blur(0px);}
+    100% {opacity: 0%; filter: blur(0px);}
+}

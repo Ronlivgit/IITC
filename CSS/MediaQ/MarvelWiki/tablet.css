@@ -1,4 +1,4 @@
-@media screen and (max-width:650px) {
+@media only screen and (max-width:1100px) and (min-width:651px) {
     body {
         height: 90vh;
     }
@@ -17,7 +17,7 @@
     }
 
     i {
-        font-size: 2.6rem;
+        font-size: 3.2rem;
         margin: 4px;
         padding: 2px;
         text-decoration: none;
@@ -32,15 +32,15 @@
     }
 
     #homesumup{
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }
     .homeminih {
-        font-size: 1.2rem;
+        font-size: 2rem;
         font-weight: bold;
     }
 
     .hometitl {
-        font-size: 2.5rem;
+        font-size: 3rem;
         font-weight: bold;
     }
     #navbar a {
@@ -53,16 +53,11 @@
         overflow:scroll;
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
     }
     
     #vidspage iframe {
-        height: 20vh;
-        width: 40vw;
-    }
-
-    #vidsfotr {
-        margin-top: 1vh;
+        height: 15vh;
+        width: 28vw;
     }
 
     #moviespage {
@@ -71,36 +66,42 @@
     }
     
     .movies {
-        flex-direction: column;
-        flex-wrap: nowrap;
-        font-size: 0.95rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 0.85rem;
     }
     
     .movies img {
-        width: 55%;
-        height: 15vh;
+        width: 25vw;
+        height: 13vh;
         margin-top: 2vh;
         filter: saturate(1.8);
     }
 
     #moviesfotr {
-        margin-top: 1vh;
+        margin-top: 0vh;
         font-size: 1rem;
     }
 
     #aboutpage h1 {
-        font-size: 1.8rem;
+        font-size: 2.3rem;
     }
     
     #aboutpage p {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
     }
     #aboutfotr {
-        margin-top: 2vh;
+        margin-top: 0vh;
     }
     
     #upgif {
         height: 10vh;
-        transform: translate(-17vw, 4vh);
+        transform: translate(-8vw, 6vh);
+    }
+
+    .spigif {
+        transform: translate(70vw,-1.3vh);
+        height: 20vh;
+        width: 25vw;
     }
 }

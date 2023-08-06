@@ -21,7 +21,7 @@
     }
 
     #homesumup{
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     .homeminih {
         font-size: 1.8rem;
@@ -49,16 +49,15 @@
     }
 
     #moviespage {
-        width: 99%;
-        height: 99%;
+        width: 90vw;
+        height: 75vh;
+        overflow: auto;
     }
     
     .movies {
-        display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
-        align-content: space-evenly;
         font-size: 1.2rem;
+        overflow:auto;
     }
     
     .movies img {
@@ -72,7 +71,6 @@
         height: 3vh;
         width: 100%;
         color: wheat;
-        margin-top: 1vh;
     }
 
     .movies p {
@@ -95,5 +93,16 @@
         position: absolute;
         width: 30vw;
         transform: translate(32vw,25vh);
+    }
+
+    #upgif {
+        height: 10vh;
+        transform: translate(-5vw, 7vh);
+    }
+
+    .spigif {
+        transform: translate(70vw,-1.3vh);
+        height: 23vh;
+        width: 28vw;
     }
 }
