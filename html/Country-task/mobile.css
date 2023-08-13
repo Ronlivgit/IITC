@@ -1,0 +1,139 @@
+@media screen and (max-width:600px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+    }
+    #menu {
+        height: 5vh;
+        color: white;
+        grid-area: nav;
+        font-size: 1.4rem;
+        width: 100vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #menu img {
+        width: 3vw;
+        height: 1.5vh;
+    }
+
+    /* HomePageStart */
+
+    #home h1 {
+    font-size: 2.3rem;
+    color: rgb(228, 0, 43);
+    filter: drop-shadow(4px 4px 4px rgb(1, 33, 105));
+    }
+
+    #home p {
+    font-size: 1.2rem;
+    filter: drop-shadow(4px 4px 4px rgb(1, 33, 105));
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vh;
+    width: 60vw;
+    }
+
+    .imgs{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    height: 40vh;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    .imgs img{
+    margin: auto;
+    width: 35vw;
+    height: 12vh;
+    filter: saturate(1.5);
+    }
+
+    /* HomePageEnd */
+
+
+    /* ContactStart */
+
+    #contact {
+        align-content: center;
+        font-size: 1.6rem;
+    }
+
+    #contact input[type=text], input[type=number], input[type=email] {
+        margin-top: 1.2vh;
+        margin-bottom: 1.2vh;
+        font-size: 1.2rem;
+        width: 100%;
+        direction: ltr;
+    }
+
+    #contact textarea {
+        margin-top: 1.2vh;
+        margin-bottom: 1.2vh;
+        width: 100%;
+        height: 8vh;
+        font-size: 1.2rem;
+    }
+
+    .fills {
+        width: 70vw;
+        margin-top: auto;
+        margin-bottom: auto;
+        color: #ffff;
+    }
+
+    /* ContactEnd */
+
+
+    /* CitiestStart */
+
+    #cities {
+        width: 90vw;
+        height: 80vh;
+    }
+
+    #cities table {
+        width: 85vw;
+        height: 80vh;
+        margin: auto;
+    }
+
+    #cities img {
+        width: 5.5vw;
+        height: 3.5vh;
+    }
+
+    /* CitiesEnd */
+
+
+    /* Videos Start */
+
+    #videos {
+        height: 85vh;
+        width: 70vw;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: scroll;
+    }
+
+    #videos iframe {
+        width: 45vw;
+        height: 22vh;
+        margin: auto;
+        margin-top: 1vh;
+    }
+
+    /* Videos End */
+    #footer {
+        height: 5vh;
+        bottom: 0;
+        font-size: 2.3rem;
+        color: black;
+        width: 100vw;
+        margin: auto;
+    }
+
+}
