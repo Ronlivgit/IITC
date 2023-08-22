@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Q1-Q27 INCLUDED -->
+    <script>
+        // q1
+        console.log("Ron");
+
+        // q2
+        var surname = "Livne"
+        console.log(surname);
+
+        // q3
+        var num = 12
+        console.log(num >= 7);
+
+        // q4 
+        var numTwo = 15
+        console.log(numTwo > num);
+
+        // q5
+        var age = prompt("Whats your age? ")
+        console.log(age > 18);
+
+        // q6
+        var userName = prompt("Whats your name? ")
+        console.log(userName);
+
+        // q7 
+        var userNum = prompt("Pick a number : ")
+        console.log(userNum%2 == 0);
+
+        // q8
+        console.log("ISRAEL");
+
+        // q9 
+        console.log("Ron");
+
+        // q10 
+        console.log(15);
+
+        // q11
+        console.log(20);
+        console.log(20);
+        console.log(20);
+        console.log(20);
+        console.log(20);
+
+        // q12
+        var firstNum = +prompt("Pick a number : ")
+        var SecNum = +prompt("Pick a second number : ")
+        var sum = firstNum + SecNum
+        var avg = ((firstNum + SecNum) / 2) 
+        console.log("Summary of 2 nums is : " + sum + " Average of 2 nums is : " + avg);
+
+        // q13
+        var squareHeight = +prompt("What is the square's height? ")
+        var squareWidth = +prompt(" What is the square's width? ")
+        console.log("the total square area is : " + squareHeight * squareWidth);
+
+        // q14
+        var num1 = +prompt("Pick a number : ");
+        var num2 = +prompt("Pick a second number : ");
+        [num1, num2] = [num2, num1]
+        console.log( "num 1 is : " + num1 + " num2 is : " + num2);
+
+        // q15
+
+
+        // q16
+        // Hositing is : allowing javascript to declare a variable before it was defined, 
+        // if we do var example; in line 50 and then example = xyz in line 100 when we use console.log(example) in line 100+, it will print the value of example.
+
+        // q17-19 = within q12-14
+
+        // q21
+        var q21FirstNum = +prompt("Pick a number : ")
+        var q21SecondNum = +prompt("Pick a number : ")
+        var q21ThirdNum = +prompt("Pick a number : ")
+        var mul = (q21FirstNum * q21SecondNum * q21ThirdNum)
+        console.log(mul);
+
+        // q22 + 23
+        var q22First = +prompt("Pick a number : ")
+        var q22Second = +prompt("Pick a number : ")
+        var result = (q22First%q22Second)
+        console.log(result);
+
+        // q24
+        var q24Num = +prompt("Pick a number : ")
+        var PlusOne = ++q24Num
+        console.log(PlusOne);
+
+        // q25
+        var q25Num = +prompt("Pick A Number : ")
+        var q25Result = q25Num*= 3
+        console.log(q25Result);
+
+        // q26
+        var Radius = +prompt("Pick a Number which will be our Radius : ")
+        var calcPerimeter = (Radius * 2 * Math.PI)
+        var calcArea = (Math.PI * Radius**2)
+        console.log("The Perimeter is : " + calcPerimeter + " cm" + " And the Area is : " + calcArea + " Square cm")
+
+        // q27
+        var firstPlayer = [prompt("Player's name : ") , +prompt("Player's age : ")];
+        var secondPlayer = [prompt("Player's name : ") , +prompt("Player's age : ")];
+        var thirdPlayer = [prompt("Player's name : ") , +prompt("Player's age : ")];
+        var playersCalc = (firstPlayer[1] + secondPlayer[1] + thirdPlayer[1])
+        console.log(firstPlayer[0], secondPlayer[0], thirdPlayer[0]);
+        console.log("The Average age is : " + playersCalc / 3);
+
+    </script>
+</body>
+</html>

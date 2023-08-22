@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // q28
+        var num = +prompt("Pick a number : ")
+
+        if (num > 10) {
+            alert("Number is greater than 10")
+            console.log("number is greater than 10");
+        }
+
+        else {
+            alert("Number is less than 10")
+            console.log("Number is less than 10");
+        }
+
+        // q29
+        var anotherNum = +prompt("Pick a number : ")
+
+        if (anotherNum > 10) {
+            alert("Number is greater than 10")
+            console.log("Number is greater than 10");
+        }
+
+        else if (anotherNum < 10) {
+            alert("Number is less than 10")
+            console.log("Number is less than 10");
+        }
+
+
+        else {
+            alert("Number is equal to 10")
+            console.log("Number is equal to 10");
+        }
+
+        // q30 
+        var first = +prompt("Pick the first number : ")
+        var second = +prompt("Pick the second number : ")
+
+        if (first > second) {
+            console.log("First number is greater than second number");
+            alert("First number is greater than second number");
+        }
+
+        else if (second > first) {
+            console.log("Second number is greater than first number");
+            alert("Second number is greater than first number");
+        }
+
+        else {
+            console.log("Values are equal");
+            alert("Values are equal");
+        }
+
+        // new tasks - q1
+        var numq1 = +prompt("Pick a number : ")
+
+        if (numq1 == 0) {
+            alert("The number is 0")
+        }
+
+        // q2
+        var q2num1 = +prompt("Pick a number : ")
+        var q2num2 = +prompt("Pick a number : ")
+
+        if (q2num1 >= q2num2) {
+            console.log(q2num1 + " is bigger than : " + q2num2 );
+        }
+
+        // q3
+        var q3num = +prompt("Pick a number : ")
+        if (q3num < 0) {
+            alert("The Number is lower than 0 ")
+        }
+
+        else if (q3num > 0) {
+            alert("The Number is bigger than 0 ")
+        }
+
+        else {
+            alert("The Number is 0 ")
+        }
+
+
+        // q4
+        var q4Num1 = +prompt("Pick a number : ")
+        var q4Num2 = +prompt("Pick a number : ")
+
+        if (q4Num1 > q4Num2) {
+            alert(q4Num1 + " is bigger than " + q4Num2)
+        }
+
+        else {
+            alert(q4Num2 + " is bigger than " + q4Num1)
+        }
+
+        // q5
+
+        var q5Num1 = +prompt("Pick a number : ")
+        var q5Num2 = +prompt("Pick a number : ")
+
+        if (q5Num1 == q5Num2){
+            alert("Those numbers are equal")
+        }
+
+        else if (q5Num2 > q5Num1) {
+            alert(q5Num2 + " Is bigger than " + q5Num1)
+        }
+
+        else {
+            alert(q5Num1 + " Is bigger than " + q5Num2)
+        }
+
+        // q6
+        var q6Num = +prompt("Pick a number : ")
+
+        if (q6Num%2==0) {
+            console.log(q6Num + " is an Even number");
+        }
+
+        else {
+            console.log(q6Num + " is an Odd number");
+        }
+
+        // q7
+        var q7Num = +prompt("Pick a number : ")
+        primeNum = true
+        if (q7Num > 1) {
+            for (var divNum=2; divNum < q7Num; divNum++) {
+                if(q7Num % divNum == 0){
+                    primeNum = false;
+                    break
+                }
+            }
+        }
+        
+        if (primeNum) {
+            alert("Its a prime number ")
+        }
+        
+        else {
+            alert("Its NOT a prime number ")
+        }
+
+        // q8
+        var q8Num1 = +prompt("Pick a number : ")
+        var q8Num2 = +prompt("Pick a number : ")
+        var q8Num3 = +prompt("Pick a number : ")
+
+        if (q8Num1 > 0 || q8Num2 > 0 || q8Num3 > 0) {
+            alert("At least one of those numbers is a positive number")
+        }
+
+        // q9 
+        var q9Num1 = +prompt("Pick a number : ")
+        var q9Num2 = +prompt("Pick a number : ")
+
+        if (q9Num1 == q9Num2) {
+            alert("Those numbers are equal")
+        }
+        else {
+            alert("Those numbers are different")
+        }
+
+        // q10
+        var q10Num = +prompt("Pick a number : ")
+        
+        if (q10Num < 0 ) {
+            alert("This number is a Negative number")
+        }
+
+        else if (q10Num == 0) {
+            alert("0")
+        }
+
+        else {
+            alert("This number is a Positive number")
+        }
+
+
+
+    </script>
+</body>
+</html>

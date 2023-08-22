@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // q1
+        function printHelloWorld(){
+            console.log("Hello World");
+        }
+
+        // q2
+        function MyName() {
+            console.log("Ron");
+        }
+
+        // q3
+        function getNameAge() {
+        return "Ron";
+        }
+
+        // q4
+        function sumIt(){
+            return 7+3
+        }
+
+        // q5
+        function q5(){
+            Num1 = 4
+            Num2 = 6
+            return Num1 + Num2
+        }
+
+        // q6
+        function q6(firstNum,secondNum){
+            sum = firstNum + secondNum
+            return sum
+        }
+
+        // q7
+        function q7(multiNum1,multiNum2){
+            multiple = multiNum1 * multiNum2
+            return multiple
+        }
+
+        // q8
+        function q8(q8Num1, q8Num2) {
+            if (q8Num1 < q8Num2 ){
+                return q8Num2 - q8Num1
+            }
+
+            return q8Num1 - q8Num2
+        }
+
+        // q9
+        function q9(q9Num1, q9Num2) {
+            if (q9Num1 < q9Num2){
+                return q9Num2 / q9Num1
+            }
+            return q9Num1 / q9Num2
+        }
+
+        // q10
+        function q10 (q10User1, q10User2){
+            return +prompt("First Number : ") + +prompt("Second Number : ")            
+        }
+
+        // q11
+        function askAge(){
+            return +prompt("Whats ur age? : ")
+        }
+        function askName (){
+            return prompt("Whats ur name? : ")
+        }
+
+        function AskNamePlusAge(){
+            return console.log("Your name is : " + askName() + " Your age is : " + askAge());
+        }
+        
+        // q12
+        var isTrue = true
+        if(isTrue == true){     
+            var amountOfNums = +prompt("Amount of Repeats : ") 
+            function maxNum(amountOfNums){
+                var maximum = 0
+                var askNums
+                for (var i = 0; i < amountOfNums ; i++) {
+                    askNums = +prompt("Gimme a Number : ")
+                    if (askNums > maximum){
+                        maximum = askNums
+                    }
+                }
+                return console.log("Highest num is : " + maximum)
+            }
+            maxNum(amountOfNums)
+        }
+
+        // q13
+        function askSum(numsAmount){
+            var numsAmount
+            var total = 0
+            for (var i = 0; i < numsAmount  ; i++) {
+                askNumbers = +prompt("Gimme a Number : ")
+                total = total + askNumbers
+            }
+            return console.log("The total is : " + total)
+        }
+
+        // q14
+        function q14(num){
+            var q14total = 0
+            for (var i=0;i <= num;i++){
+                q14total = q14total + i
+            }
+            return console.log(q14total);
+        }
+
+        // q15
+        var value1 
+        var value2 
+        function swapThem(value1,value2){
+            return [value1,value2] = [value2,value1]
+        }
+
+        // q16
+
+
+
+
+
+
+        // q17
+        function massPrint(amountOfTimes,Text){
+            for (var i=0;i < amountOfTimes; i++){
+                console.log(Text);
+            }
+        }
+
+        // q18 + 19 (minNum(3))
+        function minNum(amountOfNums){
+            var minimum = Number.MAX_VALUE
+            var askNums
+            for (var i = 0; i < amountOfNums ; i++) {
+                askNums = +prompt("Gimme a Number : ")
+                if (askNums < minimum){
+                    minimum = askNums
+                }
+            }
+            return console.log("Lowest num is : " + minimum)
+        }
+
+        // q20
+        function calcAvg(amountOfNums){
+            var askNums
+            var total = 0
+            for(var i=0;i < amountOfNums;i++){
+                askNums = +prompt("Gimme a Number : ")
+                total = +total + +askNums
+                console.log(total);
+            }
+            var avg = +total/+amountOfNums
+            return console.log(+avg)
+        }
+
+        // Q21
+        function q21(num1,num2,num3,num4){
+            return ("Total is : " + (num1 + num2 + num3 + num4))
+        }
+
+        // q22
+        function Component(base,exponent){
+            return console.log(base**exponent)
+        }
+
+        // q23
+        function splitAndSum(splitNum){
+            var splitNum = splitNum.toString()
+            var numLength = splitNum.toString().length
+            var total = 0
+            for (var i=0;i < +numLength; i++){
+                console.log(+splitNum[i])
+                total = total + +splitNum[i]
+            }
+            return console.log(total);
+        }
+
+        // q24
+        function fibonacci(){
+            var NumbersNum = +prompt("Give me A Number : ")
+            var n1 = 0
+            var n2 = 1
+            var nextNum
+            for(var i=0; i <= NumbersNum ; i++){
+                console.log(n1);
+                nextNum = n1 + n2
+                n1 = n2
+                n2 = nextNum
+            }
+        }
+
+        // q25
+        function PrintTill(num){
+            for(var i=1; i <= num;i++){
+                console.log(i);
+            }
+        }
+
+        // q26
+        function iGuess(myText,times){
+            var myText
+            var times
+            var userText = prompt("Say Something : ")
+            for(var i=0; i < times; i++){
+                console.log(myText + " " + userText);
+            }
+        }
+
+        // q27
+        function q27(){
+            var userNum = +prompt("Gimme a Number : ")
+            if (userNum > 10){
+                for(var i=0; i<userNum;i++){
+                    console.log("Hello World");
+                }
+            }
+            else{
+                return console.log(userNum);
+            }
+        }
+
+        // q28
+        function q28(){
+            var userNumber = +prompt("Gimme a Number : ")
+            var Text = prompt("Write something : ")
+            for(var i=0; i < userNumber;i++){
+                console.log(Text);
+            }
+        }
+
+        // q29
+        function q29(){
+            var userNumb
+            var avg
+            var sum = 0
+            for(var i=0; i < 5; i++){
+                userNumb = +prompt("Give me A Number : ")
+                sum += userNumb
+            }
+            avg = sum/5
+            console.log("Total sum is : " + sum)
+            console.log("The avg is : " + avg)
+        }
+
+        // q30
+        function q30(){
+            for (var i = 2; i <= 50; i++) {
+                if(i%2 == 0){
+                    console.log(i)
+                }
+            }
+        }
+
+        // q31
+        var numbPick = +prompt("Pick a Number : ")
+        function q31(numbPick){
+            for (var i = 1; i < 50; i++) {
+                if(numbPick%2 == 0){
+                    console.log(i)
+                }
+                else {
+                    console.log(i)
+                    i += 2
+                }
+            }
+        }
+
+        // q32
+        var choseNum
+        function q32(){
+            choseNum = +prompt("Pick a Number : ")
+            for (var i = 1; choseNum > i ; i++){
+                if(choseNum%i == 0){
+                    console.log(i)
+                }
+            }
+        }
+
+
+        // q33
+        function atzeret() {
+        var numPick = +prompt("Pick a Number : ")
+        var atzeret = 0
+        var calc = 0
+            for (var i=1;numPick>i;i++){
+                calc = numPick * i
+                atzeret = atzeret + calc
+            }
+            console.log(atzeret)
+        }
+
+        // q34
+        var q34Name = prompt("Whats ur name? : ")
+        function yourName(q34Name){
+            // q34Name = prompt("Whats ur name? : ")
+            console.log("Hey " + q34Name +  ", how are u?")
+        }
+        
+        // q35
+
+        // function q35(){
+        //     var q35num = +prompt("Pick a Number : ")
+        //     var under10 = 10
+        //     for(var i=0;i>0;i++) {
+        //         if (under10 > 0) {
+        //             if (q35num > 10) {
+        //                 console.log("Yes")
+        //             }
+        //             else if (q35num < 10) {
+        //                 console.log("no");
+        //                 under10 -= 1
+        //             }
+        //             else {
+        //                 console.log("Equal");
+        //             }
+        //         }
+        //     }
+        // }
+
+
+        // q36
+        function q36(){
+            var q36Num = +prompt("Pick A Number : ")
+            var highest = Number.MAX_VALUE
+            var lowest = Number.MIN_VALUE
+            var l = 1
+            while (l<5){
+                q36Num =  +prompt("Pick A Number : ")
+                if (q36Num >= highest){
+                    highest = q36Num
+                }
+                else if (q36Num <= lowest){
+                    lowest = q36Num
+                }
+                l++
+            } 
+            console.log("Highest number is : " + highest);
+            console.log("Lowest number is : " + lowest);
+        }
+
+        
+
+
+    </script>
+</body>
+</html>

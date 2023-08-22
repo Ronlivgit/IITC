@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var ColorArray = ["Red",'Pink',"Blue","Black","Yellow"]
+        var studentArray = ["Yitzhak", "Ben","Matan","Maya","Omer"]
+        var animalsArray = ["Tiger","Lion","Leopard","Shark","Whale"]
+        var citiesArray = ["Rosh ha Ayin","Tel Aviv","Ramat Gan","Yerushalaim","Petah Tikva"]
+
+        console.log(ColorArray[0]);
+        console.log(studentArray[4]);
+        console.log(animalsArray[2]);
+        console.log(citiesArray[1]);
+
+        function arrays(color){
+            if (ColorArray[2] == "Blue"){
+                ColorArray[2] = color
+            }
+            return console.log(ColorArray[2]);
+        }
+
+        var yearsArray = [1999 , 2003 , 2008 , 2010 , 2021 ]
+        function singlePrint(){
+            for (var i =0; i < yearsArray.length; i++){
+                console.log(yearsArray[i])
+            }
+        }
+
+        function printAllOver(number){
+            for (var i=0; i <yearsArray.length; i++){
+                if (yearsArray[i] > 1999) {
+                    console.log(yearsArray[i]);
+                }
+            }
+        }
+
+        function nameExist(name){
+            for (var i=0; i <studentArray.length; i++){
+                if (name == studentArray[i]){
+                    console.log(studentArray[i])
+                    console.log(studentArray[i] +" Exists in the array.");
+                }
+            }
+            return console.log("This name is not part of the array.");
+        }
+
+        function printIfExist(ArrayName,ParExist){
+            for (var i=0;i < ArrayName.length; i++){
+                if (ArrayName[i] == ParExist){
+                    return console.log(ParExist + " Is part of the array ");
+                }
+           }
+           console.log(ParExist + " Is not part of the names in the array, The names are :  " + ArrayName);
+        }
+
+        function UserArray(){
+            var newArray = []
+            var arrayItems = +prompt("How many items u wanna add to the array? : ")
+            for (var i = 0; i < arrayItems;i++){
+                newArray[i] = prompt("Chose a number : ") 
+            }
+            console.log(newArray);
+        }
+
+        function userOver10Array(){
+            var over10Array = []
+            for (var i =0; i >= 0  ;i++){
+                var userNums = +prompt("Pick a Number : ")
+                if (userNums >= 10) {
+                    over10Array[i] = userNums
+                }
+                return console.log(over10Array);
+            }
+        }
+
+        function userover10Array2(){
+            var over10Array2 = []
+            var i = 0
+            while (i >= 0){
+                var i = 0
+                var userNums = +prompt("Pick a Number : ")
+                if(userNums >= 10){
+                    over10Array2[i] = userNums
+                    i++
+                }
+                else {
+                    i = -1
+                }
+            }
+            console.log(over10Array2);
+        }
+
+    </script>
+</body>
+</html>

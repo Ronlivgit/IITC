@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // q1+2
+        var countriesArray = ["Israel", "Australia", "Spain", "Belgium", "France", "Austria", ]
+        var vegiesArray = ["Cucumber", "Tomato", "Eggplant", "Letucce", "Carrot", "Olive", ]
+        var fruitArray = ["Apple", "Watermelon", "Mango", "Strawberry", "Grape", "Banana", ]
+        var carArray = ["Toyota", "Hyundai", "Renault", "Ferrari", "Bugatti", "Lamborgini", ]
+        var kitchenToolsArray = ["Pan", "Strainer", "Teapot", "Apron", "Bowl", "Cutting board", ]
+
+        // q3
+        console.log(countriesArray[1]);
+        console.log(vegiesArray[3]);
+        console.log(fruitArray[4]);
+        console.log(carArray[3]);
+        console.log(kitchenToolsArray[5]);
+
+        // q4
+        countriesArray[0] = "Japan"
+        vegiesArray[2] = "Onion"
+        fruitArray[3] = "Cherry"
+        carArray[1] = "Aston Martin"
+        kitchenToolsArray[5] = "Deep fryer"
+
+        // q5
+        function printAllArrays(){
+            console.log(countriesArray);
+            console.log(vegiesArray);
+            console.log(fruitArray);
+            console.log(carArray);
+            console.log(kitchenToolsArray);
+        }
+
+        // q6
+
+        function printAllCountriesAlone(){
+            for(var i=0; i < 6; i++){
+                console.log(countriesArray[i])
+            }
+        }
+
+        // q7
+        function newItemInArray(fruitName){
+            fruitArray.pop(fruitName)
+        }
+
+        // q8
+        function FruitExist(fruitName){
+            for(var i=0; i < 6;i++){
+                if (fruitArray[i] = fruitName){
+                    return console.log(fruitName + " Is part of the array.");
+                }
+                return console.log(fruitName + " Isn't part of the array.");
+            }
+        }
+
+        // q9
+        function checkIfSameLength(arrayName){
+            if (arrayName.length == kitchenToolsArray.length){
+                return console.log("Same length");
+            } 
+            return console.log("Not same length")
+        }
+
+        // q10
+        function CountryAndNumber(country,number) {
+            if (number > countriesArray.length){
+                countriesArray.pop(country)
+            }
+            else {
+                countriesArray.unshift(country)
+            }
+        }
+
+        // q11
+        function kitchenToolAndNumber(toolName,number){
+            if(number > kitchenToolAndNumber.length){
+                kitchenToolAndNumber.pop(toolName)
+                console.log(kitchenToolAndNumber);
+            }
+            return console.log("Function didn't succeed");
+        }
+
+        // q12
+        function userNumsArray(){
+            var userNewArray=[]
+            var userNum = +prompt("Pick A Number : ")
+            for (var i =0 ; i < userNum;i++){
+                userNewArray[i] = i
+            }
+            console.log(userNewArray);
+        }
+
+        // q13
+        function userNumArrayReverse(){
+            var userReverseArray = []
+            
+        }
+
+        // q14
+        function familyNameArray(){
+            famNameArray = []
+            for(var i=0; i < 4; i++){
+                famName = prompt("Give me a family name : ")
+                famNameArray[i] = famName
+            }
+            return famNameArray
+        }
+
+        // q15 
+        function seriesArray(NumberOfSeries){
+            TVSeriesArray = []
+            for(var i=0; i < NumberOfSeries;i++){
+                seriesName = prompt("Give me A series name : ")
+                TVSeriesArray[i] = seriesName
+            }
+            console.log(TVSeriesArray);
+        }
+
+        // q16
+        function q16(){
+            q16Array = [5,3,7,8,11]
+            var total = 0
+            for(var i=0; i<q16Array.length;i++){
+                total += +q16Array[i]
+            }
+            console.log("Summary of the Array is : " + total);
+            console.log("Average of the Array is : " + total/q16Array.length);
+        }
+
+        // q17
+        function q17(){
+            q17Array = ["Yitzhak", "Ben", "Matan", "Maya", "Omer",]
+            for(var i=0; i<q17Array.length;i++){
+                console.log(q17Array[i])
+            }
+        }
+
+        // q18 + q19
+        wholeNumberArray = [5,12,38,1,13,28,35]
+        function checkIfExist(number,ArrayName){
+            for(var i=0; i<ArrayName.length;i++){
+                if (number == ArrayName[i]){
+                    return "True"
+                }
+                return "False"
+            }
+        }
+
+        // q20
+        function isOdd(ArrayName){
+            var Oddnums = 0
+            for(var i=0;i<ArrayName.length;i++){
+                if(ArrayName[i]%2==0){
+                    Oddnums += 1
+                }
+            }
+            return Oddnums
+        }
+
+        // q21+q22
+        NumbersArray = [2,85,12,53,25,39]
+        NumbersArray2 = [12,5,28,32,51,9]
+        function duplicateArrays(Array1,Array2){
+            if (Array1.length==Array2.length){
+                for(var i=0;i<Array1.length;i++){
+                    Array1[i]=Array2[i]
+                }
+
+                return "Duplicate done (True)"
+            }
+            else {
+                return "Duplicate didn't work (False)"
+            }
+        }
+
+
+
+
+        // q23+q24
+        function sumNumArray(ArrayName){
+            var smallestNum = Number.MAX_VALUE;
+            var biggestNum = Number.MIN_VALUE;
+            for(var i=0;i<ArrayName.length;i++){
+                if(ArrayName[i] <= biggestNum){
+                    biggestNum = ArrayName[i]
+                    ArrayName.push(biggestNum)
+                }
+                else if (ArrayName[i] >= smallestNum){
+                    smallestNum= ArrayName[i]
+                    ArrayName.unshift(smallestNum)
+                }
+            }
+            return console.log(ArrayName);
+        }
+
+        // q25
+        function FindMaxNum(ArrayName){
+            var biggestNum = Number.MIN_VALUE;
+            for (var i=0;i<ArrayName.length;i++){
+                if(ArrayName[i] > biggestNum){
+                    biggestNum = ArrayName[i]
+                }
+            }
+            return biggestNum
+        }
+
+        // q26
+        function FindMinNum(ArrayName){
+            var smallestNum = Number.MAX_VALUE;
+            var smallNumIndex
+            for (var i=0;i<ArrayName.length;i++){
+                if(ArrayName[i] < smallestNum){
+                    smallestNum = ArrayName[i]
+                    smallNumIndex = i
+                }
+            }
+            return console.log("The Index of the smallest number is : " + smallNumIndex);
+        }
+
+        // q27
+        function summaryMyArray(ArrayName){
+            var total = 0
+            for(var i=0;i<ArrayName.length;i++){
+                total += +ArrayName[i]
+            }
+            return "Total is : " + total
+        }
+
+        // q28
+        function MaxMultipleMin(ArrayName){
+            var minNum = Number.MAX_VALUE;
+            var maxNum = Number.MIN_VALUE;
+            for(var i=0;i<ArrayName.length;i++){
+                if(ArrayName[i] >= maxNum){
+                    maxNum = ArrayName[i]
+                }
+                else if (ArrayName[i] <= minNum){
+                    minNum= ArrayName[i]
+                }
+            }
+            return console.log("Total is : " + (maxNum*minNum));
+        }
+
+        // q29
+        function highestEvenNum(ArrayName){
+            var maxNum = Number.MIN_VALUE;
+            var maxNumIndex 
+            for(var i=0;i<ArrayName.length;i++){
+                if(ArrayName[i]%2==0 && ArrayName[i] > maxNum){
+                    maxNum = ArrayName[i]
+                    maxNumIndex = i
+                }
+            }
+            console.log("Highest number is : " + maxNum + " It's index is : " + maxNumIndex);
+        }
+
+        // q30
+        function totalOddNumbers(ArrayName){
+            var total = 0
+            for (var i=0;i<ArrayName.length;i++){
+                if(ArrayName[i]%2==1){
+                    total += ArrayName[i]
+                }
+            }
+            return total
+        }
+
+        // q31
+        nameArray = ["Israel","Yuval","Yoav","Noam","Roy","Itay"]
+        function addNameToArray(ArrayName,NameToAdd){
+            ArrayName.push(NameToAdd)
+            return ArrayName
+        }
+        
+        // q32
+        mailArray = ["asdasd@gmail.com","dsadsa@gmail.com"]
+        function addMailToArray(ArrayName,MailToAdd){
+            ArrayName.push(MailToAdd)
+            return ArrayName
+        }
+
+        // q33
+        function NumToArrayStartOrEnd(ArrayName,Number){
+            if(Number%2==0){
+                ArrayName.unshift(Number)
+            }
+            else{
+                ArrayName.push(Number)
+            }
+            console.log(ArrayName);
+        }
+
+        // q34
+        function DeleteIfExist(ArrayName,Number){
+            for(var i=0;i<ArrayName.length;i++){
+                if(ArrayName[i]==Number){
+                    ArrayName.splice(i,1)
+                }
+            }
+            return ArrayName
+        }
+
+        // q35
+        function AddToEndOrStart(ArrayName,Number){
+            for (var i=0;i<ArrayName.length;i++){
+                if(Number > ArrayName[i]){
+                    ArrayName.unshift(Number)
+                    return ArrayName
+                }
+                ArrayName.push(Number)
+                return ArrayName
+            }
+        }
+
+        // q36
+        function biggerThanArray(ArrayName,Number){
+            if (Number < ArrayName.length){
+                ArrayName.splice(Number, ArrayName.length)
+            }
+            console.log(ArrayName);
+        }
+
+        // q37 
+        // var q37CheckBatMitzva = [1,2,3,4,2]
+        // var q37CheckKid = [1,2,3]
+
+        function sumArrayTotal(ArrayName,Number){
+            var total = 0
+            for(var i=0;i<ArrayName.length;i++){
+                total = total + ArrayName[i]
+            }
+
+            if(total > 13){
+                console.log("Bar Mitzva");
+            }
+            else if (total = 12){
+                console.log("Bat Mitzva");
+            }
+            else {
+                console.log("Kid");
+            }
+        }
+
+        // q38
+        function ifAgeOver18(age,pName,lName,Number){
+            for(var i=0;i<Number;i++){
+                if (age > 18){
+                    console.log(pName + lName);
+                }
+                else {
+                    return pName + lName
+                }
+            }
+        }
+
+        // q39
+        function printLogXTimes(AmountOfPrints){
+            for(var i=0; i < AmountOfPrints; i++){
+                console.log("javascript is not JAVA");
+            }
+        }
+
+        // q40
+        function NameAndNumber(Name,Number){
+            Name = prompt("Whats ur name? : ")
+            Number = +prompt("Pick A Number : ")
+            for (var i=0;i<Number;i++){
+                console.log(Name);
+            }
+        }
+
+        // q41
+        function printAllUserInfo(name,email,age){
+            name = prompt("Whats ur name? :")
+            email = prompt("Whats ur email? :")
+            age = +prompt("Whats ur age? :")
+            return name + " " +  email + " " + age
+        }
+
+        // q42
+        function userGiveNameAndNum(AmountOfRepeats){
+            AmountOfRepeats = +prompt("Give me a number : ")
+            var askForName 
+            for (var i=0; i<AmountOfRepeats;i++){
+                askForName = prompt("Give me a Name : ")
+                if(askForName == "ron"){
+                    console.log("Ron");
+                }
+            }
+        }
+
+        // q43
+        function multiplier(){
+            var userNum1 = +prompt("Give me a number")
+            var userNum2 = +prompt("Give me a number")
+            for(var i=0;i<userNum1;i++){
+                for(var j=0;j<userNum2;j++){
+                    console.log(i*j);
+                }
+            }
+        }
+
+
+        // q44 
+        q44Array = [1,2,3,4,5]
+        function seperatePrintNum(){
+            for(var i=0; i < q44Array.length;i++){
+                console.log(q44Array[i]);
+            }
+        }
+
+        // q45
+        q45Array=["Ron","Yitzhak","Ben","Matan","Maya"]
+        function seperatePrintName(){
+            for(var i=0; i < q45Array.length;i++){
+                console.log(q45Array[i]);
+            }
+        }
+
+        // q46
+        userArrayq46 = []
+        function userCreateArray(){
+            var askForName 
+            for(var i=0;i<5;i++){
+                askForName = prompt("Give me a Name : ")
+                userArrayq46[i]=askForName
+            }
+        }
+
+        // q47
+        userArrayq47 = []
+        function userNumArray(){
+            var userChosenNum 
+            for(var i=0; i<7;i++){
+                userChosenNum = +prompt("Give me a Number : ")
+                userArrayq47[i] = userChosenNum
+
+                if(userArrayq47[i]%2==1){
+                    console.log(userArrayq47[i]);
+                }
+            }
+        }
+
+        // q48
+        q48randomArray=[3,15,"ASD","gtreog",19,"kofg"]
+        function swapWords(){
+            for(var i=0;i<q48randomArray.length;i++){
+                if(typeof q48randomArray[i] == "string"){
+                    q48randomArray[i] = "Not_number"
+                }
+            }
+            return q48randomArray
+        }
+        
+        // q49
+        evenArray = []
+        function OnlyEvenArray(Number){
+            var generatedNumber 
+            var x = 0  // x = Number to place the item in the array
+            for(var i=0;i<100000;i++){
+                generatedNumber = Math.floor((Math.random() * 100)+ 1)
+                if(generatedNumber%2==0){
+                    evenArray[x] = generatedNumber
+                    x++
+                    if(x==10){
+                        evenArray.push(Number)
+                        return evenArray
+                    }
+                }
+            }
+        }
+
+        // q50
+        function CalculateRectangle(Height,Width){
+            Height = +prompt("What's the rectangle height?")
+            Width = +prompt("What's the rectangle width?")
+            return ("Rectangle area is : " + (Height * Width) + "The Perimeter is : " + (Width * 4))
+        }
+
+        // q51
+        function NumsAlignment(){
+            var num1  = +prompt("Give me a Number : ")
+            var num2  = +prompt("Give me a Number : ")
+            var num3  = +prompt("Give me a Number : ")
+            if (num1 < num2 && num2 < num3){
+                console.log("Growing alignment");
+            }
+            else if (num1 > num2 && num2 > num3){
+                console.log("Reducing alignment");
+            }
+            else {
+                return "No specific alignment"
+            }
+        }
+
+        // q52, if needed reverse so, i=usernumlength, i--, usernum>i
+        function splitAndSum(){
+            var userNum = prompt("Give me A Number : ")
+            for (var i=0;i<userNum.length;i++){
+                console.log(userNum[i]);
+            }
+        }
+
+        // q53
+        q53UserArray=[]
+        function buildArrayByUserNum(){
+            var userChosenNums 
+            var i = 0
+            do {
+                userChosenNums = +prompt("Pick a number : ")
+                q53UserArray[i] = userChosenNums
+                i++
+            }
+            while (userChosenNums > 10)
+            return q53UserArray.pop() + q53UserArray
+        }
+
+
+    </script>
+</body>
+</html>

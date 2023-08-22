@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // While loops
+        // q1
+        var i = 0
+        while (i < 10){
+            i++
+            console.log("Ron");
+        }
+        
+        // q2
+        var a = 0
+        while (a < 100){
+            a++
+            console.log(a);
+        }
+
+        // q3
+        var q3input = prompt("Write something : ")
+        var b = 0
+        while (b < 10){
+            b++
+            console.log(q3input);
+        }
+
+        // q4
+        var q4num = +prompt("Pick A Number : ")
+        var c = 0
+        while (c < q4num){
+            c++
+            console.log("Hello World");
+        }
+
+        // q5
+        var q5num = +prompt("Pick A Number : ")
+        var q5text = prompt("Say Something : ")
+        var d = 0
+        while (d < q5num){
+            d++
+            console.log(q5text);
+        }
+
+        // q6
+        var e = 0
+        var q6nums 
+        var sum = 0
+        var avg 
+        while (e < 5){
+            e++
+            q6nums = +prompt("Give me a Number : ")
+            sum = sum + q6nums
+            avg = sum/5
+        }
+        console.log(sum);
+        console.log(avg);
+
+        // q7
+        var f = 0
+        while(f < 50){
+            f+= 2
+            console.log(f);
+        }
+
+        // q8
+        var f = 1
+        while (f<50){
+            console.log(f);
+            f+=3
+        }
+
+        // q9
+        var g = 1
+        var q9Num = +prompt("Pick A Number : ")
+        var atzeret = 1
+        while (g <= q9Num){
+            atzeret *= g
+            g++
+        }
+
+        // q10
+        var h = 1
+        var q10text
+        while (h>0){
+            q10text = prompt("Say Something : ")
+            if (q10text == "stop"){
+                h = 0
+            }
+        }
+
+        // q11
+        var j = 0
+        var q11num 
+        while (j < 10){
+            q11num = +prompt("Pick A Number : ")
+            if (q11num > 10){
+                console.log("yes")
+            }
+            else if (q11num < 10){
+                console.log("no")
+                j++
+            }
+            else {
+                console.log("even")
+            }
+        }
+
+        // q12
+        var k = 0
+        while (k < 100){
+            k++
+            if(k%3==0&&k%5==0){
+                console.log("FizzBuzz")
+            }
+            else if (k%5==0){
+                console.log("Buzz")
+            }
+            else if (k%3==0){
+                console.log("Fizz")
+            }
+            else {
+                console.log(k);
+            }
+        }
+
+        // q13
+        var q13nums = +prompt("Pick A Number : ")
+        var highest = q13nums
+        var lowest = q13nums
+        var l = 1
+        while (l<5){
+            q13nums =  +prompt("Pick A Number : ")
+            if (q13nums >= highest){
+                highest = q13nums
+            }
+            else if (q13nums <= lowest){
+                lowest = q13nums
+            }
+            l++
+        } 
+
+        console.log("Highest number is : " + highest);
+        console.log("Lowest number is : " + lowest);
+
+        // q14
+        var m = 1
+        while (m >= 0){
+            var q14name = prompt("Name : ")
+                if (q14name[0] == "a"){
+                    break
+                }
+            
+                else {
+                m++
+                console.log(q14name);
+                }
+        }
+
+        // q15
+        var m = 1
+        while (m > 0){
+            var q15name = prompt("Name : ")
+                if (q15name[0] == "a" || q15name[0] =="A"){
+                    break
+                    m = 0
+                }
+            
+                else {
+                m++
+                console.log(q15name);
+                }
+        }
+
+
+        // q17
+        var q17n = 5
+        var hiNum = 1
+        var loNum = q17n
+        var n = 1
+
+        while (n > 0){
+            q17n = +prompt("Pick A Number : ")
+            n++
+            if (q17n >= 1) {
+                if (q17n >= hiNum){
+                    hiNum = q17n
+                }
+
+                else if (q17n <= loNum) {
+                    loNum = q17n
+                }
+            }
+
+            else {
+                n = 0
+                console.log(hiNum)
+                console.log(loNum)
+            }
+        }
+
+
+        // q18
+        var q18num = prompt("Num : ")
+        var len = q18num.length
+        var o = 0
+
+
+        while (o < len){
+            console.log(q18num[o])
+            o++
+            
+        }
+
+        // Q19
+        for(i = 1; i < 11 ; i++){
+            console.log(i)
+            for (z = 1; z < 11 ; z++){
+                console.log(z)
+            }
+        }
+        // q20
+        random = Math.floor(Math.random() * 100);
+        var minute = 1000 * 60;
+        var hour = minute * 60;
+        var startTime = performance.now()
+        var guess
+        console.log(random)
+        for(i = 0; random != guess ; i++){
+            guess = +prompt("Guess A Number : ")
+            if(guess < random){
+                console.log("Higher");
+            }
+
+            else if (guess > random){
+                console.log("Lower");
+            }
+
+            else {
+                random == guess
+                console.log("You guessed correctly");
+            }
+        }
+        var endTime = performance.now()
+        var totalTime = Math.floor((endTime - startTime)/1000)
+        console.log("It took u " + totalTime + " seconds to solve it")
+        
+
+
+
+
+    </script>
+</body>
+</html>

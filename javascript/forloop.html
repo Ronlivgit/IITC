@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // q1
+        for (var i=0;i < 10; i++) {
+            console.log("Ron")
+        }
+
+        // q2
+        for (var i=1; i <= 100; i++ ){
+            console.log(i)
+        }
+
+        // q3
+        
+        var userText = prompt("Write a text : ")
+
+        for (var i=0; i<10 ; i++ ){
+            userText
+        }
+
+        // q4
+        var usrNum = +prompt("Pick a Number : ")
+
+        for(var i=0; i < usrNum; i++) {
+            console.log("Hello World");
+        }
+
+
+        // q5
+
+        var q5Number = +prompt("Pick a Number : ")
+        var q5txt = prompt("Write something : ")
+
+        for (var i=0; i<q5Number ; i++ ){
+            console.log(q5txt);
+        }
+
+        // q6
+        var q6Nums = +prompt("Pick a Number : ")
+        var sum = 0
+
+        for (var i=0; i<4 ; i++ ){
+            q6Nums = +prompt("Pick a Number : ")
+         sum = q6Nums + sum
+        }
+        console.log(sum)
+        var avg = sum/5
+        console.log(avg)
+
+        // q7
+
+        for(var i=1;i<=50;i++) {
+            i++
+            console.log(i);
+        }
+
+        // q8
+        for(var i=1;i<50;i+= 3) {
+            console.log(i);
+        }
+
+        // q9 LAHZOR AHRIE
+        var q9Num = +prompt("Pick a Number : ")
+        var atzeret = 0
+        var calc = 0
+        for (var i=1;q9Num>i;i++){
+            calc = q9Num * i
+            atzeret = atzeret + calc
+        }
+        
+        console.log(atzeret)
+
+        // q10
+        var q10text = prompt("Input a text : ")
+        for (var i=1;i>0;i++) {
+            if (q10text == "stop") {
+                i=0
+            }
+            else {
+            q10text = prompt("Input a text : ")
+            }
+        }
+
+        // q11
+        var q11num = +prompt("Pick a Number : ")
+        var under10 = 10
+        for(var i=0;i>0;i++) {
+
+            if (under10 > 0) {
+                if (q11num > 10) {
+                    console.log("Yes")
+                }
+
+                else if (q11num < 10) {
+                    console.log("no");
+                    under10 -= 1
+                }
+
+                else {
+                    console.log("Equal");
+                }
+            }
+
+        }
+
+
+
+    </script>
+</body>
+</html>

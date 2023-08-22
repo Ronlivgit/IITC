@@ -1,0 +1,8 @@
+body {
+    background-color: red;
+}
+
+div {
+    background-color: rgb(255, 255, 255);
+    border: 4px dotted #06f726;
+}

@@ -1,0 +1,41 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+
+.layout {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 4px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-areas: 
+    "headr headr headr headr"
+    "leftbar main main main"
+    "leftbar main main main"
+    "leftbar main main main"
+    "footr footr footr footr";
+}
+
+.headr {
+    grid-area: headr;
+    background: red;
+}
+
+.leftbar {
+    grid-area: leftbar;
+    background: wheat;
+}
+
+.main {
+    grid-area: main;
+    background: greenyellow;
+}
+
+.footr {
+    grid-area: footr;
+    background: darkgoldenrod;
+}
