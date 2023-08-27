@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        // q33 ?????????
+        function createObject(){
+            var myObject = {}
+            var amountOfKeys = +prompt("How many fields? : ")
+            for (var i=0;i<amountOfKeys;i++){
+                myObject[prompt("Key : ")]
+            }
+        }
+
+
+        // q38
+        function ifStringIsA(string){
+            for(var i=0;i<string.length;i++){
+                if(string[i] == "a"){
+                    return i
+                }
+            }
+            return "Not found"
+        }
+
+        // q39
+        function ifStringHasR(string){
+            for(var i=0;i<string.length;i++){
+                if(string[i]=="r"){
+                    return true
+                }
+            }
+            return false
+        }
+
+        // q40
+        function ifStringIncludeLetters(string,letter){
+            for(var i=0; i<string.length;i++){
+                if(string[i]==letter){
+                    return true
+                }
+            }
+            return false
+        }
+
+        // q41
+        function printIndexOfLetter(string,letter){
+            var checkChars = ifStringIncludeLetters(string,letter)
+            if(checkChars){
+                console.log(string.lastIndexOf(letter));
+            }
+            else{
+                console.log(letter + " is not part of the string.");
+            }
+        }
+
+        // q42
+        function returnFirst3Letters(word){
+            return word.substr(0,3)
+        }
+
+        // q44
+        function return4FromY(word){
+            word = "Sayonara"
+            return word.substr(word.indexOf("y"),4)
+        }
+
+        // q45
+        function returnAllFromLetterO(){
+            word = "Sayonara"
+            return word.substr(3,word.length)
+        }
+
+        // q46+47
+        function IndexTillRestOfString(string,index){
+            if(index > string.length){
+                return "Index is too big"
+            }
+            return string.substr(index,string.length)
+        }
+
+        // q48+49
+        function IfCorrectReturn3Index(string,index){
+            if(index > string.length){
+                return "Index is too big"
+            }
+            return string.substr(index,3)
+        }
+
+        // q50
+        function returnStringBasedOnNums(string,num1,num2){
+            if (string.length > num1 && string.length > num2){
+                return string.substr(num1,num2)
+            }
+        }
+
+        // q51
+        function return3Index(word){
+            word = "Sayonara"
+            return word.substring(0,3)
+        }
+
+        // q53
+        function q53(word){
+            word = "Sayonara"
+            return word.substring(word.indexOf("y"),word.indexOf("y") + 4)
+        }
+
+        // q54
+        function returnAllFromO(word){
+            word = "Sayonara"
+            return word.substring(word.indexOf("o"),word.length)
+        }
+
+        // q55
+        function printIndexesAndSplit(fullname){
+            fullname = prompt("Whats ur full name? : ")
+            var letters = 0
+            var spaceIndex
+            var firstName
+            var lastName
+            for(var i=0;i<fullname.length;i++){
+                letters++
+                if(fullname[i]== " "){
+                    spaceIndex = i
+                    console.log("Spacebar is the " + i + " Index");
+                }
+            }
+            firstName = fullname.substring(0,spaceIndex)
+            lastName = fullname.substring(spaceIndex,fullname.length)
+            console.log("Your first name is : " + firstName + " And last name is : " + lastName + " and There is a spacebar" + " Total indexes are : " + fullname.length);
+        }
+
+        // q56
+        function stringIdenticalLower(string1,string2){
+            string1LowCase = string1.toLowerCase()
+            string2LowCase = string2.toLowerCase()
+            if(string1LowCase == string2LowCase){
+                return "They are identical"
+            }
+            return "They aren't identical"
+        }
+
+        // q57
+        function stringIdenticalUpper(string1,string2){
+            string2UpperCase = string2.toUpperCase()
+            string1UpperCase = string1.toUpperCase()
+            if(string1UpperCase == string2UpperCase){
+                return "They are identical"
+            }
+            return "They aren't identical"
+        }
+
+        // q58
+        function printLongerName(firstName,lastName){
+            firstName = prompt("Whats ur first name? : ")
+            lastName = prompt("Whats ur last name? : ")
+            if(firstName.length >lastName.length){
+                console.log(firstName);
+            }
+            else{
+                console.log(lastName);
+            }
+        }
+
+        // q59+60
+        function takeNameFromUser(firstName,lastName){
+            firstName = prompt("Whats ur first name? : ")
+            lastName = prompt("Whats ur last name? : ")
+            var aInIt 
+            for(var i=0;i<firstName.length;i++){
+                if(firstName[i].toLowerCase()=="a"){
+                    console.log(firstName + " Has 'a' in it");
+                    break
+                }
+            }
+            for(var j=0;j<lastName.length;j++){
+                lastName = lastName.toLowerCase()
+                if(lastName[j] + lastName[j+1] + lastName[j+2] == "api"){
+                    console.log(lastName + " Includes 'api' in it");
+                }
+            }
+        }
+
+        // q61
+        function isItLongerThan5(string){
+            if(string.length > 5){
+                return "Long"
+            }
+            return "Short"
+        }
+
+        // q62
+        function countryLongerThan3(countryName){
+            if(countryName.length < 3){
+                return "Yes"
+            }
+            return "No"
+        }
+
+        // q63
+        function q63(string,letter){
+            if(string.length > 6){
+                return string
+            }
+            return string.indexOf(letter)
+        }
+
+        // q64
+        function stringIncludesIndex(string,letter){
+            for(var i=0;i<string.length;i++){
+                if(string[i] == letter){
+                    return string.indexOf(letter)
+                }
+            }
+            return string
+        }
+
+        // q65+66
+        function q65(fName,lName){
+            fName = prompt("Whats ur first name? : ")
+            lName = prompt("Whats ur last name? : ")
+            return fName[0] + "." + " " + lName.toUpperCase()
+        }
+
+        // q67
+        function returnLonger(fName1,fName2){
+            if(fName1.length > fName2.length){
+                console.log("Shorter last name is : " + fName2.toLowerCase());
+                return fName1 + " Is the longer last name"
+            }
+        }
+
+        // q68
+        function q68(Name,Letter){
+            for(var i=0; i<Name.length;i++){
+                if(Name[i] == Letter){
+                    return Name
+                }
+                else{
+                    console.log(letter + " Is not part of " + Name);
+                }
+            }
+        }
+
+        // q69
+        function q69(FullName){
+            FullName = prompt("Whats ur full name? : ")
+            var spaceIndexArray = []
+            var numOfSpaces = 0
+            for(var i=0; i<FullName.length;i++){
+                if(FullName[i] == " "){
+                    numOfSpaces ++
+                    spaceIndexArray.push(i)
+                }
+            }
+            if(numOfSpaces == 0){
+                return FullName[0].toUpperCase() + FullName.substr(1,FullName.length)
+            }
+            else if (numOfSpaces == 1){
+                return FullName.substr(0,spaceIndexArray[0]) + " " + FullName.substr(spaceIndexArray[0] + 1,FullName.length)
+            }
+            else if (numOfSpaces == 2){
+                console.log(FullName.substr(0,spaceIndexArray[0]));
+                console.log(FullName.substr(spaceIndexArray[0] + 1,FullName.length));
+                console.log(FullName.substr(spaceIndexArray[1] + 1,FullName.length));
+            }
+        }
+
+        // q70
+        var objectUser = {
+            firstName: "Ron",
+            lastName : "Livne",
+            age: "24",
+            email: "Ron.livne58@gmail.com"
+        }
+
+        // q71
+        var objectDog = {
+            name: "Lukso",
+            age:"6 Month",
+            gender:"Male",
+            type:"Boston Terrier",
+        }
+
+        // q72
+        var objectCar = {
+            color:"Silver",
+            numOfWheels:"4",
+            company:"Suzuki"
+        }
+
+        // q73
+        console.log(objectUser.firstName);
+        // q74
+        console.log(objectDog.age);
+        // q75
+        console.log(objectCar.color + " " + objectCar.company);
+
+        // q76
+        function swapUserLastName(userLastName){
+            userLastName = prompt("Whats ur last name? : ")
+            objectUser.lastName = userLastName
+            console.log(objectUser.lastName);
+        }
+
+        // q77
+        function swapDogType(dogType){
+            dogType = prompt("What type of dog do u like? : ")
+            objectDog.type = dogType
+            console.log(objectDog.type);
+        }
+
+        // q78
+        function swapCarWheels(WheelsAmount){
+            WheelsAmount = prompt("How many wheels do u have? : ")
+            objectCar.numOfWheels = WheelsAmount
+            console.log(objectCar.numOfWheels);
+        }
+
+        // q79
+        function userNewUserField(){
+            var newUserKey = prompt("Key : ")
+            var newUserKeyValue = prompt("KeyValue : ")
+            objectUser[newUserKey] = newUserKeyValue
+            console.log(objectUser);
+        }
+
+        // q79-81, objectName = Object that we wanna add key+value to.
+        function newKeyValueForObject(objectName){
+            var objectKeyName = prompt("Key : ")
+            var objectKeyValue = prompt("KeyValue : ")
+            objectName[objectKeyName] = objectKeyValue
+            console.log(objectName);
+        }
+
+        // q82
+        function addIdToObjects(objectName,idValue){
+            var objectKeyName = "id"
+            objectName[objectKeyName] = idValue
+        }
+
+        addIdToObjects(objectUser,1)
+        addIdToObjects(objectDog,2)
+        addIdToObjects(objectCar,3)
+
+        // q83
+        objectsArray = [objectUser,objectDog,objectCar]
+        console.log(objectsArray);
+
+        // q84
+        console.log(objectsArray[1].id);
+
+        // q85
+        function printAllIdsInArray(objectsArray){
+            var i=0
+            do{
+                console.log(objectsArray[i].id);
+                i++
+            }
+            while(i<objectsArray.length)
+        }
+
+        // q86
+        // newKeyValueForObject(objectUser)
+
+        // q87
+        function createDogObjArray(){
+            objectDogArray = []
+            for(var i=1;i<=3;i++){
+                var dogDetails = {
+                    id:i,
+                    name:prompt("What is dog " + i +  " name?"),
+                    age:prompt("What is dog " + i +  " age?"),
+                    gender:prompt("What is dog " + i +  " gender?"),
+                    type:prompt("What is dog " + i +  " type?"),
+                }
+                objectDogArray.push(dogDetails)
+            }
+            console.log(objectDogArray);
+        }
+
+        // q88
+        function createCarObjArray(numOfObjects){
+            numOfObjects = +prompt("How many objects do u wanna add? : ")
+            objectCarArray = []
+            for(var i=1;i<=numOfObjects;i++){
+                var carDetails = {
+                    id:i,
+                    color:prompt("What is the car " + i +  " color?"),
+                    wheels:prompt("Amount of car " + i +  " wheels?"),
+                    company:prompt("What is car " + i +  " company?"),
+                }
+            }
+            console.log(objectCarArray);
+        }
+
+        // q89+q90
+        function createNewObjectAndArray(){
+            var amountOfObjects = +prompt("How many objects do u wanna make? : ")
+            var addedObjectsArray = []
+            for(var i=1;i<=amountOfObjects;i++){
+                var ObjectName = {}
+                var numOfKeyAndValues = +prompt("How many keys + values do u want? : ")
+                for(var j=0;j<numOfKeyAndValues;j++){
+                    var objectKey = prompt("Key : ")
+                    var objectValue = prompt("Value : ")
+                    ObjectName[objectKey] = objectValue
+                }
+                addedObjectsArray.push(ObjectName)
+            }
+            console.log(addedObjectsArray);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

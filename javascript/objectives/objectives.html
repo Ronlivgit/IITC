@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // q8
+        function randomize(){
+            return Math.floor(Math.random() * 10)
+        }
+
+        // q9
+        function random0toNum(Number){
+            return Math.floor(Math.random() * Number)
+        }
+
+        // q10
+        function q10(UserNum){
+            var UserNum = +prompt("Give me a Number : ")
+            var randomizedNum = randomize()
+            if(randomizedNum == UserNum){
+                console.log("Success");
+            }
+            else{
+                console.log("Wrong");
+            }
+        }
+
+        // q11
+        function randomArray(){
+            var ranArray = []
+            for(var i=0; i<10;i++){
+                ranArray[i] = Math.floor(Math.random() * 100)
+            }
+            console.log(ranArray);
+        }
+
+        // q12
+        function bigOrSmallWithUser(UserNum){
+            var UserNum = +prompt("Give me a Number : ")
+            var randomNum = randomize()
+            if (randomNum > UserNum){
+                return "you Lost " + randomNum
+            }
+            else if (UserNum > randomNum){
+                return "you Won " + UserNum
+            }
+            else{
+                return "Equal"
+            }
+        }
+
+        // q13
+        function pickUserLowest(UserNum){
+            var nums = []
+            for(var i=0; i<5;i++){
+                UserNum = +prompt("Give me a Number : ")
+                nums.push(UserNum)
+            }
+            console.log(Math.min(...nums));
+        }
+
+        // q14
+        function returnMinOrMax(userNum){
+            userNum = +prompt("Give me a Number : ")
+            var randomizedNum = random0toNum(100)
+            console.log("Random " + randomizedNum );
+            if (userNum%2==0) {
+                return Math.min(userNum,randomizedNum)
+            }
+            else {
+                return Math.max(userNum,randomizedNum)
+            }
+        }
+
+        // Q15
+        function randomLongArray(){
+            longArray = []
+            longArray.length = random0toNum(364)
+            for(var i=0;i<longArray.length;i++){
+                longArray[i] = random0toNum(873)
+            }
+            return longArray
+        }
+
+        // q16
+        function randomizeIndexFromArray(ArrayName){
+            var index = randomize()
+            console.log(ArrayName[index]);
+        }
+
+        // q17
+        function changeIndexToCapital(userName){
+            userName = prompt("Whats ur name? : ")
+            randomIndex = random0toNum(userName.length)
+            return userName + userName[randomIndex].toUpperCase()
+        }
+
+        // q18
+        function q18(){
+            var userName = prompt("Name : ")
+            var userName2 = prompt("Name : ")
+            var age = +prompt("Age? : ")
+            var age2 = +prompt("Age? : ")
+            var randomNumber = random0toNum(100)
+            if(userName[0] == userName2[0]){
+                console.log(randomNumber);
+            }
+            else if (userName[userName.length-1] == userName2[userName2.length-1]){
+                console.log(userName[userName.length-1]);
+            }
+            else{
+                console.log(age + age2);
+            }
+        }
+
+        // q19
+        function printPartly(text){
+            text = prompt("Say something : ")
+            var randomNumber = random0toNum(5)
+            console.log(text.substr(0,randomNumber));
+        }
+
+        // q20
+        function q20(userNum){
+            userNum = +prompt("Pick a number : ")
+            var randomNum = random0toNum(userNum)
+            if(userNum%3==0){
+                var i = 0
+                do{
+                    console.log(randomNum);
+                    i++
+                }
+                while(i<randomNum)
+            }
+            else{
+                console.log(Math.PI * randomNum);
+            }
+        }
+
+        // q21
+        function printDateToConsole(){
+            console.log(Date());
+        }
+
+        // q22
+        function dateAsString(date){
+            myDate = new Date(date)
+            console.log(myDate);
+        }
+
+        // q23
+        function userChooseDate(){
+            var userDate = prompt("Give me a date : ")
+            var chosenDate = new Date(userDate)
+            console.log(chosenDate);
+        }
+
+        // q24
+        function stringReturnMonth(){
+            var userDate = prompt("Give me a date : ")
+            var myDate = new Date(userDate)
+            var month = myDate.getMonth()
+            return month
+        }
+
+        // q25
+        function stringReturnHour(){
+            var userDate = prompt("Give me a date : ")
+            var myDate = new Date(userDate)
+            var hour = myDate.getHours()
+            return hour
+        }
+
+        // q26
+        function stringReturnYear(){
+            var userDate = prompt("Give me a date : ")
+            var myDate = new Date(userDate)
+            var year = myDate.getFullYear()
+            return year
+        }
+
+        // q27
+        function stringReturnMinutes(){
+            var userDate = prompt("Give me a date : ")
+            var myDate = new Date(userDate)
+            var minutes = myDate.getMinutes()
+            return minutes
+        }
+
+        // q28
+        function compareYears(){
+            var userDate = prompt("Give me a date : ")
+            var userDate1 = prompt("Give me a date : ")
+            if (userDate > userDate1){
+                return userDate
+            }
+            else {
+                return userDate1
+            }
+        }
+
+        // q29
+        function calcAgeByDate(){
+            var userDate = prompt("When is ur birthday? : ")
+            var userBday = new Date(userDate)
+            var userBirthYear = userBday.getFullYear()
+            var today = new Date()
+            return (today.getFullYear() - userBirthYear) ;
+        }
+
+        // var fake_date ="Wed Aug 23 2003 19:37:33 GMT+0300 (Israel Daylight Time)"
+
+        // q30
+        function checkUserAgeByDate(){
+            age = calcAgeByDate()
+            if(age > 18){
+                console.log("Your'e allowed to get in");
+            }
+            else{
+                console.log("Your'e NOT allowed to get in");
+            }
+        }
+
+        // q31
+        function printLocation(){
+            var myDate =new Date()
+            console.log(myDate.substr(35,Number.MAX_VALUE));
+        }
+
+        // q32
+        
+
+        // q33
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
