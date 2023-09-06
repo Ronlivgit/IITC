@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="myForm" onsubmit="return checkForm()">
+        <label id= "fNameLabel" for="firstNameInput">First name : </label><br>
+        <input id="firstNameInput" class="disableIt" name="firstNameInput" type="text"><br>
+
+        <label id = "lNameLabel" for="lastNameInput">Last name :</label><br>
+        <input id="lastNameInput" class="disableIt" name="lastNameInput" type="text"><br>
+
+        <label id="bDayLabel" for="Birthdate">Birth Date :</label><br>
+        <input id="Birthdate" class="disableIt" name = "Birthdate" type="date"><br>
+
+        <label id="emailLabel" for="userEmail">Email address : </label><br>
+        <input id ="userEmail" class="disableIt" name="userEmail" type="email"><br>
+
+        <label id="phoneLabel" for="userPhoneNum">Phone number : </label><br>
+        <input id="userPhoneNum" class="disableIt" name="userPhoneNum" type="tel"><br>
+
+        <label for="userRole">Role in the factory : </label><br>
+        <input id="userRole" class="disableIt" name="userRole" type="text"><br>
+        <button id="submitBtn">Submit</button>
+    </form>
+
+    <div id="timerDiv"></div>
+    <div id="cooldownDiv"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
