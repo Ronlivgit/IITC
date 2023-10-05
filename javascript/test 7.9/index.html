@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+        #testInput1 {
+            width: 15vw;
+        }
+        #testInput2 {
+            width: 15vw;
+        }
+        #myAnimationDiv{
+            background-color: blue;
+            margin-top: 10vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="mainDiv"></div>
+        <label for="testInput1">Width</label><br>
+        <input id="testInput1" min="1" max="100" placeholder="enter width from 1-100" type="number"><br>
+        <label for="testInput2">Height</label><br>
+        <input id="testInput2" min="1" max="100" placeholder="enter height from 1-100" type="number"><br>
+        <button id="myBtn" onclick="changeSizes()">Start</button>
+    <div id="myAnimationDiv"></div>
+    
+    <script src="main.js"></script>
+</body>
+</html>

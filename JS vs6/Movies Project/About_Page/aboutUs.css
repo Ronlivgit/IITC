@@ -1,0 +1,45 @@
+/* !check through dev mode the width of phone,tablet,computer! */
+/* Nav and footer should be used for all different css!! */
+nav{
+    grid-area: header;
+    height: 6vh;
+    font-size: 1.5rem;
+  }
+  
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      opacity: 85%;
+      overflow: hidden;
+      background-color: #333;
+      display: flex;
+      justify-content: space-evenly;
+      height: 5vh;
+      align-items: center;
+    }
+  
+    li {
+      float: left;
+    }
+  
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    li a:hover {
+      background-color: #111;
+}
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 5vh;
+    grid-area: footer;
+    background-color: #333;
+    opacity: 85%;
+}
+/* END OF NAV + Footer */
