@@ -28,16 +28,26 @@ function fetchMovieAndActors(movieId = 578){
     fetch(`https://api.themoviedb.org/3/movie/${movieId}?language=en-US`, options)
         .then(response => response.json())
         .then(data => {
+            console.log(data);
             if(data.poster_path != null){
                 backgroundDiv.style =`background-image:url("https://image.tmdb.org/t/p/w500${data.poster_path}")`
+                let movieGenresHTML = ""
+                data.genres.forEach(genre => {
+                    movieGenresHTML +=`<span>${genre.name}, </span>`
+                })
                 mainMovieDiv.innerHTML =
                 `
-                <img src="https://image.tmdb.org/t/p/w500${data.poster_path}" style="width:32vw;height:62vh">
-                <h1>Title : ${data.original_title}</h1>
-                <p class="popularItemsIDS" style="display:none">${data.id}</p>
+                <img src="https://image.tmdb.org/t/p/w500${data.poster_path}" style="width:35vw;height:60.7vh">
+                <h2><span class="movieDatas">Movie : </span>${data.original_title}</h2>
                 ${createLikeBtn}
-                <p>${data.tagline}</p>
-                <p>Overview : ${data.overview}</p>
+                <p><span>${data.tagline}</span><br><p>
+                <p class="popularItemsIDS" style="display:none">${data.id}</p>
+                <p>
+                <span class="movieDatas">Categories : </span>${movieGenresHTML}<br>
+                <span><span class="movieDatas">Average Vote : </span>${data.vote_average}</span><br>
+                <span><span class="movieDatas">Release Date : </span>${data.release_date}</span><br><br>
+                <span>${data.overview}</span><br><br>
+                </p>
                 `
             }
             else{"none"}
@@ -52,8 +62,9 @@ function fetchMovieAndActors(movieId = 578){
                 document.querySelector("#mainActorsDiv").innerHTML +=
                 `<div class="singleActorCred">
                 <img src="https://image.tmdb.org/t/p/w500${item.profile_path}"><br>
-                <p>Character's name : ${item.character}
-                <br><br><span>Actor's name : ${item.original_name} </span>
+                <p>
+                <span>Character : ${item.character}</span><br>
+                <br><span>Actor : ${item.original_name}</span>
                 </p>
                 </div>
                 ` 

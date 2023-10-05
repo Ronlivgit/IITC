@@ -28,12 +28,6 @@ fetch('https://api.themoviedb.org/3/authentication', optionsAuth)
 .then(response => console.log(response))
 .catch(err => console.error(err));
 
-
-
-// Start of code : 
-let moreThanSinglePage = false
-let numOfReqMovPages = 1
-
 // add <div class=displayerDiv> after the main Printing div, make it display none and when mouse on over make display true
 function searchForMovie(movieName){
   searchMainDiv.innerHTML = ''
@@ -71,12 +65,12 @@ function printMultiplePages(numOfPages = 1,movieName = "spiderman"){
           }
           searchMainDiv.innerHTML+=
           `
-          <div class="displayInfo" style="height:20vh;width:15vw;">
+          <div class="displayInfo" style="height:23vh;width:15vw;">
           <img style="height:14vh;width:12vw;" src="https://image.tmdb.org/t/p/w500${item.poster_path}"><br>
           <p style="font-weight:bold">${item.title}</p>
           <p class="popularItemsIDS" style="display:none">${item.id}</p>
-          <span>Release Date : ${item.release_date}</span><br>
-          <span>Vote score : ${item.vote_average}</span><br>
+          <span style="font-weight:bold">Release Date : ${item.release_date}</span><br>
+          <span style="font-weight:bold">Vote score : ${item.vote_average}</span><br>
           ${createLikeBtn}
           </div>
           `

@@ -85,6 +85,9 @@ footer {
   text-align: center;
   align-content: center;
   color: #333;
+  display: flex;
+  align-items: center;
+  margin-left: 41vw;
 }
 
 #searchMainDiv{
@@ -101,7 +104,14 @@ footer {
 }
 
 #searchForm input {
-  margin-top: 1vh;
+  height: 1.8vh;
+  margin: 5px;
+}
+
+#searchForm button {
+  width: 3vw;
+  height: 1.5vh;
+  font-weight: bold;
 }
 
 nav{
@@ -134,8 +144,9 @@ nav{
 }
 
 .like__btn {
-  height: 3vh;
-  width: 4.5vw;
+  margin-top: 0.5vh;
+  height: 3.3vh;
+  width: 5.2vw;
   padding: 10px 15px;
   background: #0080ff;
   font-size: 18px;

@@ -45,7 +45,7 @@ function fetchGeneralPopular(page = 1){
             <img class="popularImgs" src="https://image.tmdb.org/t/p/w500${item.poster_path}">
             <h1>${item.original_title}</h1>
             <p style="font-weight:bold">Average Vote Score : ${item.vote_average}</p>
-            <p class="popularItemsIDS" style="display:none">${item.id}</p>
+            <p class="popularItemsIDS" style="display:none">${item.id}</p><br>
             ${createLikeBtn}
             </div>
             `
