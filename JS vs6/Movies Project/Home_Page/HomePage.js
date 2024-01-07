@@ -23,11 +23,12 @@ const optionsAuth = {
     .then(response => response.json())
     .then(response => console.log(response))
     .catch(err => console.error(err));
-
     
+
 // Imports :
 import { createLikeBtn } from "../dataStorage.js";
 import { activeLikeBtns } from "../dataStorage.js";
+import {displayMovieInfo} from '../dataStorage.js';
 
 // Start of code 
 let currPage = 1
@@ -38,18 +39,22 @@ function fetchGeneralPopular(page = 1){
     fetch(`https://api.themoviedb.org/3/movie/popular?language=en-US&page=${page}`,optionsAuth)
     .then(res => res.json())
     .then(data => {
+        console.log(data);
         const popPrint = data.results.map(item =>{
             homeTrendingDiv.innerHTML+=
             `
             <div class="popularItems">
             <img class="popularImgs" src="https://image.tmdb.org/t/p/w500${item.poster_path}">
+            <div class="homeDisplayDiv" style="display:none">
             <h1>${item.original_title}</h1>
-            <p style="font-weight:bold">Average Vote Score : ${item.vote_average}</p>
+            <p style="font-weight:bold">Average Vote Score : ${item.vote_average}</p><br>
+            <p style="font-weight:bold;padding:8px;margin:1vw;">${item.overview}</p>
             <p class="popularItemsIDS" style="display:none">${item.id}</p><br>
             ${createLikeBtn}
             </div>
             `
         })
+        displayMovieInfo(".popularItems",".popularImgs",".homeDisplayDiv")
         activeLikeBtns()
         return popPrint 
     })
@@ -68,16 +73,20 @@ function fetchTimedPopularity(page = 1,timeScale){
             const timescalePrint = data.results.map(item => {
                 homeTrendingDiv.innerHTML+=
                 `
-                <div class="popular${timeScale}ly">
+                <div class="popularTimeScaled">
                 <img class="popularImgs" src="https://image.tmdb.org/t/p/w500${item.poster_path}">
-                <h1>${item.original_title}</h1>
-                <p style="font-weight:bold">Average Vote Score : ${item.vote_average}</p>
-                ${createLikeBtn}
-                <p class="popularItemsIDS" style="display:none">${item.id}</p>
+                 <div class="homeDisplayDiv" style="display:none">
+                    <h1>${item.original_title}</h1>
+                    <p style="font-weight:bold">Average Vote Score : ${item.vote_average}</p><br>
+                    <p style="font-weight:bold;padding:8px;margin:1vw;">${item.overview}</p>
+                    ${createLikeBtn}
+                    <p class="popularItemsIDS" style="display:none">${item.id}</p>
+                 </div>
                 </div>
                 `
             })
             activeLikeBtns()
+            displayMovieInfo(".popularTimeScaled",".popularImgs",".homeDisplayDiv")
             return timescalePrint 
         })
         .catch(err => console.error(err))

@@ -1,6 +1,23 @@
 /* !check through dev mode the width of phone,tablet,computer! */
 /* Nav and footer should be used for all different css!! */
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow:hidden
+}
+
+#backgroundDiv {
+  background-image: url(https://images.pexels.com/photos/355887/pexels-photo-355887.jpeg?cs=srgb&dl=pexels-pixabay-355887.jpg&fm=jpg);
+  background-size:cover;
+  height: 100vh;
+  width: 100vw;
+  margin-left: -0.3vw;
+  margin-top: 0.8vh;
+}
+
 nav{
+    margin-left: -0.3vw;
+    margin-top: -0.8vh;
     grid-area: header;
     height: 6vh;
     font-size: 1.5rem;
@@ -34,6 +51,7 @@ nav{
       background-color: #111;
 }
   footer {
+    margin-left: -0.3vw;
     position: absolute;
     bottom: 0;
     width: 100vw;
@@ -42,4 +60,62 @@ nav{
     background-color: #333;
     opacity: 85%;
 }
-/* END OF NAV + Footer */
+
+#Socials {
+  padding: 0.5rem;
+  margin: auto;
+  font-size: 3em;
+  text-decoration:none;
+}
+
+a {
+  color: rgb(255, 255, 255);
+  text-decoration:none;
+}
+
+#Credits {
+  color: #fff;
+  padding: 10px;
+  font-size: 1em;
+  transform: translate(43vw,-4vh);
+  width: 20vw;
+}
+
+#aboutSection {
+  width: 50vw;
+  padding: 1vw;
+  height: 60vh;
+  margin: auto;
+  margin-top: 0vh;
+} 
+
+#mainAboutDiv {
+  color: #333;
+  text-shadow: 3px 3px 6px #fff;
+  padding: 1vw;
+  height: 60vh;
+  width: 44vw;
+  font-size: 1.2em;
+}
+
+#titleDiv {
+  font-size: 2.2em;
+  height: 5vh;
+  border-radius: 20px;
+  padding: 0.6em;
+  width: 20vw;
+  background-color: #e7e2e2d8;
+}
+
+#restDiv {
+  overflow: auto;
+  font-size: 1.1em;
+  height: 44vh;
+  border-radius: 20px;
+  margin-top: 1vh;
+  padding: 1em;
+  width: 45vw;
+  background-color: #e7e2e2d8;
+}
+
+/* END OF NAV + Footer

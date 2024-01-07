@@ -1,4 +1,5 @@
-/* !check through dev mode the width of phone,tablet,computer! */
+@media only screen and (min-width:601px) and (max-width:1440px) {
+    /* !check through dev mode the width of phone,tablet,computer! */
 body{
     width: 100vw;
     height: 100vh;
@@ -64,33 +65,33 @@ ul {
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
-  width: 100vw;
-  height: 5vh;
-  grid-area: footer;
-  background-color: #333;
-  opacity: 85%;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 5vh;
+    grid-area: footer;
+    background-color: #333;
+    opacity: 85%;
 }
 
 #Socials {
-padding: 0.5rem;
-margin: auto;
-font-size: 2.35em;
-text-decoration:none;
+  padding: 0.5rem;
+  margin: auto;
+  font-size: 2.35em;
+  text-decoration:none;
 }
 
 a {
-color: rgb(255, 255, 255);
-text-decoration:none;
+  color: rgb(255, 255, 255);
+  text-decoration:none;
 }
 
 #Credits {
-color: #fff;
-padding: 10px;
-font-size: 1.2em;
-transform: translate(43vw,-4.3vh);
-width: 22vw;
+  color: #fff;
+  padding: 10px;
+  font-size: 1.1em;
+  transform: translate(38vw,-4.3vh);
+  width: 25vw;
 }
 /* END OF NAV + Footer */
 
@@ -110,6 +111,16 @@ width: 22vw;
   align-items: center;
 }
 
+.searchContainer {
+    height: 30vh;
+    width: 30vw;
+  }
+  
+  .searchContainer img {
+    height: 30vh;
+    width: 30vw;
+  }
+
 #searchPaginationDiv {
   transform: translate(0vw,-89vh);
   height: 5vh;
@@ -117,9 +128,9 @@ width: 22vw;
 
 #searchMainDiv{
   grid-area: mainArea;
-  gap: 1.5rem;
+  gap: 2rem;
   width: 100vw;
-  height: 82.8vh;
+  height: 83vh;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -127,16 +138,6 @@ width: 22vw;
   overflow: auto;
   align-items: center;
   text-overflow: clip;
-}
-
-.searchContainer {
-  height: 25vh;
-  width: 20vw;
-}
-
-.searchContainer img {
-  height: 25vh;
-  width: 20vw;
 }
 
 #searchForm input {
@@ -181,9 +182,9 @@ nav{
 }
 
 .like__btn {
-  margin-top: 0.5vh;
-  height: 3.5vh;
-  width: 5.5vw;
+  margin-left: -10vw;
+  height: 3.8vh;
+  width: 9vw;
   padding: 10px 15px;
   background: #0080ff;
   font-size: 18px;
@@ -193,30 +194,27 @@ nav{
   outline: none;
   border: none;
   cursor: pointer;
-  margin-left: 5.8vw;
 }
 
-
-/* .searchDisDiv p span{
-  width: 20vw;
-} */
 .searchDisDiv{
   color: #FFF;
-  text-align: center;
-  transform: translate(-3vw,-20vh);
-  font-size:1.1rem
+  text-align:center;
+  transform: translate(4.5vw,-25vh);
+  font-size: 1em;
 }
 
 .searchParas{
-  background-color: #333333a2;
+    background-color: #333333a2;
   filter: brightness(180%),contrast(150%);
   text-shadow: 4px 6px 6px #333;
-  height: 70%;
+  height: 80%;
   z-index: -1;
-  transform: translate(4vw,-2vh);
-  width: 18vw;
+  transform: translate(-0.5vw,-2vh);
+  font-weight: bold;
+  width: 22vw;
 }
 
 ::-webkit-scrollbar{
   opacity: 0%;
+}
 }

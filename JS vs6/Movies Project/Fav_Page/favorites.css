@@ -14,9 +14,9 @@ body {
 }
 
 #favMoviesSect{
+  margin-top: 8vh;
   width: 100vw;
-  height: 88vh;
-  margin: 0;
+  height: 80vh;
   display: flex;
   flex-direction: row;
   overflow: auto;
@@ -72,7 +72,7 @@ nav{
 /* END OF NAV + Footer */
 .favMoviesDivs{
   width: 30vw;
-  height: 70vh;
+  height: 60vh;
   margin: 0;
   gap: 1rem;
 }
@@ -115,12 +115,30 @@ nav{
   padding-top: 6vh;
   padding-left: 3vw;
   padding-right: 3vw;
-  height: 70vh;
+  height: 60vh;
   color: #fff;
   text-shadow: 2px 4px 4px  #000;
   font-size: 1.4rem;
   position: relative;
   text-align: center;
-  transform: translate(0vw,-70.35vh);
+  transform: translate(0vw,-60.35vh);
   opacity: 100%;
+}
+
+.displayerDiv h1, p {
+  border-radius: 12px;
+  font-weight: bold;
+  filter: brightness(180%),contrast(150)
+}
+
+::-webkit-scrollbar{
+  opacity: 0%;
+}
+
+#favTitle {
+  position: absolute;
+  transform: translate(38vw,-86.7vh);
+  text-shadow: 4px 4px 8px #fff;
+  color: #333;
+  font-size: 3em;
 }

@@ -21,6 +21,7 @@ const options = {
 import { createLikeBtn } from "../dataStorage.js";
 import { activeLikeBtns } from "../dataStorage.js";
 import { validateLikes } from "../dataStorage.js";
+import {displayMovieInfo} from '../dataStorage.js';
 
 
 // Can't export, too many different changes for the Favorites page.
@@ -28,30 +29,42 @@ function fetchMovieAndActors(movieId = 578){
     fetch(`https://api.themoviedb.org/3/movie/${movieId}?language=en-US`, options)
         .then(response => response.json())
         .then(data => {
-            console.log(data);
-            if(data.poster_path != null){
-                backgroundDiv.style =`background-image:url("https://image.tmdb.org/t/p/w500${data.poster_path}")`
-                let movieGenresHTML = ""
-                data.genres.forEach(genre => {
-                    movieGenresHTML +=`<span>${genre.name}, </span>`
-                })
-                mainMovieDiv.innerHTML =
+            console.log(data.success);
+            if(data.success != false){
+                mainMovieDiv.style = ""
+                if(data.poster_path != null){
+                    backgroundDiv.style =`background-image:url("https://image.tmdb.org/t/p/w500${data.poster_path}")`
+                    let movieGenresHTML = ""
+                    data.genres.forEach(genre => {
+                        movieGenresHTML +=`<span>${genre.name}, </span>`
+                    })
+                    mainMovieDiv.innerHTML =
+                    `
+                    <img src="https://image.tmdb.org/t/p/w500${data.poster_path}">
+                    <p><span class="movieDatas">Movie : </span>${data.original_title}</p>
+                    ${createLikeBtn}
+                    <p><span class="movieDatas">Tag : </span>${data.tagline}<br><p>
+                    <p class="popularItemsIDS" style="display:none">${data.id}</p>
+                    <p>
+                    <span class="movieDatas">Categories : </span>${movieGenresHTML}<br>
+                    <span><span class="movieDatas">Average Vote : </span>${data.vote_average}</span><br>
+                    <span><span class="movieDatas">Release Date : </span>${data.release_date}</span><br><br>
+                    <span>${data.overview}</span><br><br>
+                    </p>
+                    `
+                }
+                else{"none"}
+                activeLikeBtns()
+            } 
+            else{
+                backgroundDiv.style = "display:none"
+                mainMovieDiv.innerHTML = 
                 `
-                <img src="https://image.tmdb.org/t/p/w500${data.poster_path}" style="width:35vw;height:60.7vh">
-                <h2><span class="movieDatas">Movie : </span>${data.original_title}</h2>
-                ${createLikeBtn}
-                <p><span>${data.tagline}</span><br><p>
-                <p class="popularItemsIDS" style="display:none">${data.id}</p>
-                <p>
-                <span class="movieDatas">Categories : </span>${movieGenresHTML}<br>
-                <span><span class="movieDatas">Average Vote : </span>${data.vote_average}</span><br>
-                <span><span class="movieDatas">Release Date : </span>${data.release_date}</span><br><br>
-                <span>${data.overview}</span><br><br>
-                </p>
+                <h1 style="transform:translate(24vw,10vh);font-size:4rem;color:#333;">Probably Wrong ID, please try different ID.</h1>
                 `
+                mainMovieDiv.style = "width:100vw;height:100vh;overflow:hidden;position:absolute;top:-9vh;background-image:url(https://shorturl.at/hkqvV);background-size:cover;z-index:-9999"
+                return console.log("BUG ELSE");
             }
-            else{"none"}
-            activeLikeBtns()
         })
         .catch(err => console.error(err));
     
@@ -61,13 +74,16 @@ function fetchMovieAndActors(movieId = 578){
             if(item.profile_path != null){
                 document.querySelector("#mainActorsDiv").innerHTML +=
                 `<div class="singleActorCred">
-                <img src="https://image.tmdb.org/t/p/w500${item.profile_path}"><br>
-                <p>
-                <span>Character : ${item.character}</span><br>
-                <br><span>Actor : ${item.original_name}</span>
-                </p>
+                <img class="actorsImgs" src="https://image.tmdb.org/t/p/w500${item.profile_path}"><br>
+                    <div class="actorsDisplayDiv"
+                    <p class="actorsPara">
+                    <span>Character : ${item.character}</span>
+                    <br><span>Actor : ${item.original_name}</span>
+                    </p>
+                    </div>
                 </div>
                 ` 
+                displayMovieInfo(".singleActorCred",".actorsImgs",".actorsDisplayDiv")
             }
             else{
                 console.log(item + "is null");
@@ -85,5 +101,7 @@ formById.addEventListener("submit",(e)=>{
         mainActorsDiv.innerHTML=''
         fetchMovieAndActors(userChoise)
     }
-    return console.log("BUG BUG BUG");
+    else {
+        return console.log("BUG BUG BUG");
+    }
 })

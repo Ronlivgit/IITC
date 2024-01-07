@@ -1,7 +1,6 @@
-/* !check through dev mode the width of phone,tablet,computer! */
+@media only screen and (max-width:600px) {
+    /* !check through dev mode the width of phone,tablet,computer! */
 /* HOME PAGE CSS */
-@media only screen and (min-width:1441px) {
-
 body{
     width: 100vw;
     height: 100vh;
@@ -23,8 +22,8 @@ body{
     height: 100vh;
     width: 100vw;
     opacity: 70%;
+    /* background-color: #333333; */
     background-image:url(space-911785.jpg);
-    background-size: auto;
     z-index: -999;
 }
 
@@ -32,7 +31,7 @@ body{
 nav{
     grid-area: header;
     height: 6vh;
-    font-size: 1.5rem;
+    font-size: 0.9rem;
   }
   
   ul {
@@ -62,7 +61,8 @@ nav{
     li a:hover {
       background-color: #111;
 }
-  footer {
+footer {
+    margin-left: -0.3vw;
     position: absolute;
     bottom: 0;
     width: 100vw;
@@ -75,7 +75,7 @@ nav{
 #Socials {
   padding: 0.5rem;
   margin: auto;
-  font-size: 2.35em;
+  font-size: 2.5em;
   text-decoration:none;
 }
 
@@ -87,10 +87,11 @@ a {
 #Credits {
   color: #fff;
   padding: 10px;
-  font-size: 1.2em;
-  transform: translate(43vw,-4.3vh);
-  width: 22vw;
+  font-size: 1em;
+  transform: translate(43vw,-5.2vh);
+  width: 28vw;
 }
+
 /* END OF NAV + Footer */
 #homeTrendingDiv {
     gap: 1.2rem;
@@ -99,7 +100,7 @@ a {
     grid-area: main;
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     overflow:auto;
     text-align: center;
 }
@@ -116,8 +117,8 @@ a {
 }
 
 .like__btn {
-  height: 3vh;
-  width: 7vw;
+  height: 5.8vh;
+  width: 20vw;
   padding: 10px 15px;
   background: #0080ff;
   font-size: 18px;
@@ -131,13 +132,13 @@ a {
 
 
 .popularImgs{
-    height: 33vh;
-    width: 22.5vw;
+    height: 45vh;
+    width: 85vw;
 }
 
 .popularItems{
-  height: 33vh;
-  width: 22.5vw;
+  height: 45vh;
+  width: 85vw;
 }
 
 #timescaleDiv{
@@ -147,36 +148,35 @@ a {
 
 #paginationDiv{
     position: absolute;
-    left: 45vw;
-    right: 45vw;
-    width: 12vw;
+    left: 73.5vw;
+    width: 25vw;
     top: 6vh;
     display: flex;
     justify-content: space-evenly;
 }
 
 #paginationDiv button{
-  width: 2.2vw;
-  height: 2vh;
+  width: 4.5vw;
 }
 
 #timescaleDiv button {
-  margin-left: 0.4vw;
-  width: 7.6vw;
+    font-size: 0.7em;
+    font-weight: bold;
+  width: 22vw;
   height: 2vh;
 }
 
 .homeDisplayDiv{
-  overflow: auto;
-  color: #fff;
-  padding: 6px;
+  color: #ffffff;
   text-shadow: 4px 6px 6px solid #333;
   filter: brightness(185%),contrast(150%);
-  transform: translate(0vw,-31.5vh);
+  transform: translate(0vw,-39.5vh);
 }
 
 .popularTimeScaled{
-  height: 33vh;
-  width: 22.5vw;
+  height: 45vh;
+  width: 85vw;
 }
+
+
 }

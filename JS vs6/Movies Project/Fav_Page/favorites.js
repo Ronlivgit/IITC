@@ -10,16 +10,22 @@
 //! Extra - solo learning it.
 
 const optionsAuth = {
-    method: 'GET',
-    headers: {
-      accept: 'application/json',
-      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NmFkYzc4OWJhNjAzYjA4ZTMzYTY1NDg5MWE3ODY5MiIsInN1YiI6IjY1MTZiOTBmOTNiZDY5MDBjNGRlNTc1MyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.bIEaKdBRYnB2ZqumD9brBNT6ze-AHQ6FPPi_nauIf_I'
-    }
-  };
+  method: 'GET',
+  headers: {
+    accept: 'application/json',
+    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NmFkYzc4OWJhNjAzYjA4ZTMzYTY1NDg5MWE3ODY5MiIsInN1YiI6IjY1MTZiOTBmOTNiZDY5MDBjNGRlNTc1MyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.bIEaKdBRYnB2ZqumD9brBNT6ze-AHQ6FPPi_nauIf_I'
+  }
+};
+
+fetch('https://api.themoviedb.org/3/authentication', optionsAuth)
+  .then(response => response.json())
+  .then(response => console.log(response))
+  .catch(err => console.error(err));
 
 // Imports
 import {likedItems} from '../dataStorage.js'
 import {validateLikes} from '../dataStorage.js'
+import {displayMovieInfo} from '../dataStorage.js'
 
 
 const createUnlikeBtn = `
@@ -38,7 +44,7 @@ function searchById(movieID){
     favMoviesSect.innerHTML +=
     `
     <div class="favMoviesDivs">
-    <img class="favMoviesImgs" src="https://image.tmdb.org/t/p/w500${data.poster_path}" style="width:30vw;height:70vh">
+    <img class="favMoviesImgs" src="https://image.tmdb.org/t/p/w500${data.poster_path}" style="width:30vw;height:60vh">
     <div class="displayerDiv" style="display:none">
       <h1>Title : ${data.original_title}</h1>
       <p>Released : ${data.release_date}</p><br>
@@ -49,8 +55,7 @@ function searchById(movieID){
     </div>`
     backgroundImgDiv.style = `background-image:url(https://image.tmdb.org/t/p/w500${data.poster_path})`
     activeUnlikeBtns()
-    displayMovieInfo()
-    // printMyTarget()
+    displayMovieInfo(".favMoviesDivs",".favMoviesImgs",".displayerDiv")
   })
   .catch(err => console.error(err));
 }
@@ -66,22 +71,22 @@ likedItems.map(item => {
 })
 
 
-function displayMovieInfo(){
-  let favMovies = document.querySelectorAll(".favMoviesDivs")
-  let displayDiv = document.querySelectorAll(".displayerDiv")
-  let favImages = document.querySelectorAll(".favMoviesImgs")
-  for(let i=0;i<favMovies.length;i++){
-    favMovies[i].addEventListener("mouseover",(event)=> {
-      favImages[i].style.opacity = "60%"
-      displayDiv[i].style.display = "block"
-    })
+// function displayMovieInfo(sectionClass,imgClass,displayerClass){
+//   let sectionDiv = document.querySelectorAll(sectionClass)
+//   let imagesDiv = document.querySelectorAll(imgClass)
+//   let displayDiv = document.querySelectorAll(displayerClass)
+//   for(let i=0;i<sectionDiv.length;i++){
+//     sectionDiv[i].addEventListener("mouseover",(event)=> {
+//       imagesDiv[i].style.opacity = "60%"
+//       displayDiv[i].style.display = "block"
+//     })
 
-    favMovies[i].addEventListener("mouseout",(event)=>{
-      favImages[i].style.opacity = "100%"
-      displayDiv[i].style.display = "none"
-    })
-  }
-}
+//     sectionDiv[i].addEventListener("mouseout",(event)=>{
+//       imagesDiv[i].style.opacity = "100%"
+//       displayDiv[i].style.display = "none"
+//     })
+//   }
+// }
 
 
 function activeUnlikeBtns(){
@@ -101,105 +106,3 @@ function activeUnlikeBtns(){
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Nothing pretty much 
-
-// let sliderContainer = document.querySelectorAll(".slider-container")
-// function buildSliderLayout(){
-//   likedItems.map(item => {
-//     let i=1
-//     document.querySelector(".slider-container").innerHTML +=
-//     `
-//     <div class="slides">
-//     <div class="slider-numbers">${i}/${likedItems.length}</div>
-//     <div class="slider-image"><img src="https://image.tmdb.org/t/p/w500${data.poster_path}" alt="background_${i}"></div>
-//     <div class="slider-captions">
-//       <h1 class="movie-title">${data.original_title}}</h1>
-//       <p class="movie-para">${data.overview}</p>
-//     </div>
-//     </div>
-//     `
-
-//     document.querySelector(".slider-bullets").innerHTML +=
-//     `
-//     <span class="dots" onclick="currentSlide(${i})"></span>
-//     `
-
-//     i++
-//   })
-// }
-
-
-
-// function searchById(movieID){
-//   fetch(`https://api.themoviedb.org/3/movie/${movieID}?language=en-US`, optionsAuth)
-//   .then(response => response.json())
-//   .then(data => {
-//     favMoviesSect.innerHTML +=
-//     `
-//     <div class="favMoviesDivs">
-//     <img src="https://image.tmdb.org/t/p/w500${data.poster_path}" style="width:15vw;height:18vh">
-//     <h1>Title : ${data.original_title}</h1>
-//     <p>${data.tagline}</p>
-//     <p>Overview : ${data.overview}</p><br>
-//     ${createUnlikeBtn}
-//     </div>`
-//     backgroundImgDiv.style = `background-image:url(https://image.tmdb.org/t/p/w500${data.poster_path})`
-//     activeUnlikeBtns()
-//   })
-//   .catch(err => console.error(err));
-// }

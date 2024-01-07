@@ -1,0 +1,201 @@
+@media only screen and (max-width:600px) {
+    /* !check through dev mode the width of phone,tablet,computer! */
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+#backgroundDiv{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    opacity: 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+/* Nav and footer should be used for all different css!! */
+nav{
+    grid-area: navbar;
+    height: 5vh;
+    width: 100vw;
+    opacity: 85%;
+    top: 0;
+    font-size: 1rem;
+    background-color: #333;
+  }
+  
+   ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      display: flex;
+      justify-content: space-evenly;
+      height: 5vh;
+      align-items: center;
+     }
+  
+     li {
+      float: left;
+     }
+  
+     li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+     }
+     li a:hover {
+      background-color: #111;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 5vh;
+    grid-area: footer;
+    background-color: #333;
+    opacity: 85%;
+}
+
+#Socials {
+  padding: 0.5rem;
+  margin: auto;
+  font-size: 2.2em;
+  text-decoration:none;
+}
+
+a {
+  color: rgb(255, 255, 255);
+  text-decoration:none;
+}
+
+#Credits {
+  color: #fff;
+  padding: 10px;
+  font-size: 0.9em;
+  transform: translate(43vw,-4.2vh);
+  width: 28vw;
+}
+/* END OF NAV + Footer */
+#mainMovieDiv img {
+    width: 43vw;
+    height: 45vh;
+    margin-left: 55vw;
+    position: inherit;
+}
+#mainMovieDiv {
+    padding: 0.6em;
+    left: 0;
+    margin-top: 10vh;
+    width: 55vw;
+    height: 65vh;
+    position: absolute;
+    font-size: 1rem;
+}
+
+#mainMovieDiv span{
+    text-overflow: clip;
+}
+
+#mainActorsDiv{
+    bottom:0;
+    position: absolute;
+    right: 0;
+    grid-area: mainRight;
+    height: 35vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    overflow: auto;
+    flex-wrap: wrap;
+}
+
+/* Like BTN */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.like__btn {
+    position: absolute;
+  margin-left: 28.5vw;
+  margin-top: -68.5vh;
+  height: 3.8vh;
+  width: 6.5vw;
+  padding: 10px 15px;
+  background: #0080ff;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 5px;
+  color: #e8efff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+.singleActorCred{
+    width: 30vw;
+    height: 15vh;
+    display: block;
+    font-weight: bold;
+    font-size: 0.6rem;
+    white-space: wrap;
+    margin: 5px;
+}
+
+.singleActorCred img{
+    width: 30vw;
+    height: 15vh;
+}
+
+.actorsDisplayDiv{
+    display: none;
+    transform: translate(0vw,-14.8vh);
+    width: 80%;
+    background-color: #33333360;
+    border-radius: 10px;
+    filter: brightness(180%),contrast(150%);
+    color: #fff;
+    text-shadow: 4px 6px 6px  #333;
+    font-size: 0.75rem;
+    z-index: 1;
+}
+
+#formById{
+    padding: 1.5vw;
+    grid-area:form;
+    height: 5vh;
+    width: 52vw;
+    position: absolute;
+    top: 5vh;
+    }
+    label{
+        font-size: 1.2rem;
+    }
+    input{
+        height: 1.8vh;
+    }
+    button{
+        width: 4vw;
+        height: 1.8vh;
+}
+
+.movieDatas {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+}

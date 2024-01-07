@@ -21,6 +21,7 @@ const optionsAuth = {
 import { createLikeBtn } from "../dataStorage.js";
 import { activeLikeBtns } from "../dataStorage.js";
 import { validateLikes } from "../dataStorage.js";
+import {displayMovieInfo} from '../dataStorage.js';
 
 
 fetch('https://api.themoviedb.org/3/authentication', optionsAuth)
@@ -50,11 +51,12 @@ function searchForMovie(movieName){
     })
     .catch(err => console.error(err));
 }
-// add <div class=displayerDiv> after the main Printing div, make it display none and when mouse on over make display true
-function printMultiplePages(numOfPages = 1,movieName = "spiderman"){
+//! Add pagination (arrows left right), change numOfPages to currentPage,
+
+function printMultiplePages(pageNumber = 1,movieName = "one piece"){
   searchMainDiv.innerHTML = ''
   let changeBackGround = false
-    for(let i=1;i<=numOfPages;i++){
+    for(let i=1;i<=pageNumber;i++){
       fetch(`https://api.themoviedb.org/3/search/movie?query=${movieName}&include_adult=true&language=en-US&page=${i}`, optionsAuth)
       .then(response => response.json())
       .then(data => data.results.map(item => {
@@ -65,30 +67,33 @@ function printMultiplePages(numOfPages = 1,movieName = "spiderman"){
           }
           searchMainDiv.innerHTML+=
           `
-          <div class="displayInfo" style="height:23vh;width:15vw;">
-          <img style="height:14vh;width:12vw;" src="https://image.tmdb.org/t/p/w500${item.poster_path}"><br>
-          <p style="font-weight:bold">${item.title}</p>
-          <p class="popularItemsIDS" style="display:none">${item.id}</p>
-          <span style="font-weight:bold">Release Date : ${item.release_date}</span><br>
-          <span style="font-weight:bold">Vote score : ${item.vote_average}</span><br>
-          ${createLikeBtn}
+          <div class="searchContainer">
+            <img class="searchImgs" src="https://image.tmdb.org/t/p/w500${item.poster_path}"><br>
+            <div class="searchDisDiv" style="display:none">
+              <p class="popularItemsIDS" style="display:none">${item.id}</p>
+              <p class="searchParas"><span>${item.title}</span><br><br>
+              <span style="font-weight:bold">Release Date : ${item.release_date}</span><br><br>
+              <span style="font-weight:bold">Vote score : ${item.vote_average}</span><br> 
+              </p>
+            ${createLikeBtn}
+            </div>
           </div>
           `
           activeLikeBtns()
+          displayMovieInfo(".searchContainer",".searchImgs",".searchDisDiv")
         }
         else{
           console.log(item + "has null poster path");
         }
       }))
+    }
   }
-}
-// item.release_date + vote_average
-
-searchForm.addEventListener("submit",(e)=>{
-  e.preventDefault()
-  let userChoice = searchInput.value
-  console.log(userChoice);
-  searchForMovie(userChoice)
-})
-
-searchForMovie("spiderman")
+  
+  searchForm.addEventListener("submit",(e)=>{
+    e.preventDefault()
+    let movieName = searchInput.value
+    console.log(movieName);
+    searchForMovie(1,movieName)
+  })
+  
+  searchForMovie("one piece")

@@ -49,3 +49,20 @@ export function validateLikes(){
         removedLikedItems.splice(i,1)
     }
 } 
+
+export function displayMovieInfo(sectionClass,imgClass,displayerClass){
+    let sectionDiv = document.querySelectorAll(sectionClass)
+    let imagesDiv = document.querySelectorAll(imgClass)
+    let displayDiv = document.querySelectorAll(displayerClass)
+    for(let i=0;i<sectionDiv.length;i++){
+      sectionDiv[i].addEventListener("mouseover",(event)=> {
+        imagesDiv[i].style.opacity = "30%"
+        displayDiv[i].style.display = "block"
+      })
+  
+      sectionDiv[i].addEventListener("mouseout",(event)=>{
+        imagesDiv[i].style.opacity = "100%"
+        displayDiv[i].style.display = "none"
+      })
+    }
+  }

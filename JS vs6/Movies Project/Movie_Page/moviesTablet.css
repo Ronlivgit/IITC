@@ -1,9 +1,8 @@
-body {
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-}
-@media only screen and (min-width:1441px) {
+@media only screen and (min-width:601px) and (max-width:1440px) {
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
     #backgroundDiv{
         position: absolute;
         height: 100vh;
@@ -91,27 +90,25 @@ body {
     #Credits {
       color: #fff;
       padding: 10px;
-      font-size: 1.2em;
+      font-size: 1em;
       transform: translate(43vw,-4.3vh);
-      width: 22vw;
+      width: 20vw;
     }
-    
     /* END OF NAV + Footer */
     #mainMovieDiv {
-        padding: 1.5vw;
+        padding: 0.4em;
+        overflow: auto;
         grid-area:mainLeft;
         margin-top: 9vh;
-        width: 45vw;
-        height: 87vh;
+        width: 56vw;
+        height: 90vh;
         position: absolute;
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
-
     #mainMovieDiv img {
         width:35vw;
-        height:57.7vh
+        height:60.7vh
     }
-    
     #mainActorsDiv{
         margin-top:7.5vh;
         position: absolute;
@@ -123,7 +120,7 @@ body {
         justify-content: space-evenly;
         overflow: auto;
         flex-wrap: wrap;
-        width: 55vw;
+        width: 42vw;
     }
     
     /* Like BTN */
@@ -136,8 +133,9 @@ body {
     
     .like__btn {
         position: absolute;
+        z-index: 1;
       margin-left: 28.5vw;
-      margin-top: -65.5vh;
+      margin-top: -64.2vh;
       height: 3.8vh;
       width: 6.5vw;
       padding: 10px 15px;
@@ -153,7 +151,7 @@ body {
     
     
     .singleActorCred{
-        width: 15vw;
+        width: 19vw;
         height: 20vh;
         display: block;
         font-weight: bold;
@@ -163,7 +161,7 @@ body {
     }
     
     .singleActorCred img{
-        width: 15vw;
+        width: 19vw;
         height: 20vh;
     }
     
@@ -181,15 +179,15 @@ body {
     }
     
     #formById{
-        padding: 1.5vw;
+        padding: 0.6em;
         grid-area:form;
         height: 5vh;
-        width: 30vw;
+        width: 27vw;
         position: absolute;
         top: 5vh;
         }
         label{
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         }
         input{
             height: 1.8vh;
@@ -200,7 +198,7 @@ body {
     }
     
     .movieDatas {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         font-weight: bold;
     }
     

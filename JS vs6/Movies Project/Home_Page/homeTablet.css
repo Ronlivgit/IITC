@@ -1,0 +1,149 @@
+/* !check through dev mode the width of phone,tablet,computer! */
+/* HOME PAGE CSS */
+@media only screen and (min-width:601px) and (max-width:1440px){
+
+    #homeBackground{
+        position: absolute;
+        margin-left: 0vw;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        opacity: 70%;
+        background-image:url(space-911785.jpg);
+        /* background-repeat: no-repeat; */
+        background-size: auto;
+        z-index: -999;
+    }
+    
+    /* Nav and footer should be used for all different css!! */
+    nav{
+        grid-area: header;
+        height: 6vh;
+        font-size: 1.5rem;
+      }
+      
+      ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          opacity: 85%;
+          overflow: hidden;
+          background-color: #333;
+          display: flex;
+          justify-content: space-evenly;
+          height: 5vh;
+          align-items: center;
+        }
+      
+        li {
+          float: left;
+        }
+      
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        li a:hover {
+          background-color: #111;
+    }
+      footer {
+        position: absolute;
+        bottom: 0;
+        width: 100vw;
+        height: 5vh;
+        grid-area: footer;
+        background-color: #333;
+        opacity: 85%;
+    }
+    /* END OF NAV + Footer */
+    #homeTrendingDiv {
+        gap: 1.2rem;
+        margin-left: 0.8vw;
+        width: 100vw;
+        height: 84vh;
+        grid-area: main;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        overflow:auto;
+        text-align: center;
+    }
+    
+    ::-webkit-scrollbar{
+      opacity: 0%
+    }
+    
+    @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    .like__btn {
+      height: 3.2vh;
+      width: 13vw;
+      padding: 10px 15px;
+      background: #0080ff;
+      font-size: 18px;
+      font-family: "Open Sans", sans-serif;
+      border-radius: 5px;
+      color: #e8efff;
+      outline: none;
+      border: none;
+      cursor: pointer;
+    }
+    
+    
+    .popularImgs{
+        height: 45vh;
+        width: 43vw;
+    }
+    
+    .popularItems{
+      height: 45vh;
+      width: 43vw;
+    }
+    
+    #timescaleDiv{
+        margin-left:1vw;
+        margin-bottom: .5rem;
+    }
+    
+    #paginationDiv{
+        position: absolute;
+        left: 71.5vw;
+        width: 27vw;
+        top: 6vh;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    #paginationDiv button{
+      width: 5vw;
+      height: 2vh;
+    }
+    
+    #timescaleDiv button {
+        font-size: 1em;
+        font-weight: bold;
+      width: 22vw;
+      height: 2vh;
+    }
+    
+    .homeDisplayDiv{
+      color: #fff;
+      text-shadow: 4px 6px 6px solid #333;
+      filter: brightness(185%),contrast(170%);
+      transform: translate(0vw,-40.5vh);
+    }
+    
+    .popularTimeScaled{
+      height: 30vh;
+      width: 23vw;
+    }
+    
+    }
