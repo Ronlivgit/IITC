@@ -133,25 +133,25 @@
     }
 
     .searchContainer {
-        height: 35vh;
-        width: 43vw;
+        height: 30vh;
+        width: 40vw;
     }
     
     .searchContainer img {
-        height: 35vh;
-        width: 43vw;
+        height: 30vh;
+        width: 40vw;
     }
 
     #searchForm input {
-    height: 2vh;
-    width: 20vw;
+    height: 2.2vh;
+    width: 35vw;
     margin: 5px;
     }
 
     #searchForm button {
         font-size: 0.5em;
-    width: 8vw;
-    height: 2vh;
+    width: 10vw;
+    height: 2.2vh;
     font-weight: bold;
     }
 
@@ -180,7 +180,7 @@
 
     .like__btn {
     margin-top: 0.5vh;
-    height: 3.5vh;
+    height: 3.2vh;
     width: 20vw;
     padding: 10px 15px;
     background: #0080ff;
@@ -199,7 +199,8 @@
         font-weight: bold;
     color: #FFF;
     text-align: center;
-    transform: translate(-1vw,-32vh);
+    transform: translate(-2vw,-27vh);
+    font-size: 0.6em;
     }
 
     .searchParas{

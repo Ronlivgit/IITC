@@ -44,7 +44,7 @@ function searchById(movieID){
     favMoviesSect.innerHTML +=
     `
     <div class="favMoviesDivs">
-    <img class="favMoviesImgs" src="https://image.tmdb.org/t/p/w500${data.poster_path}" style="width:30vw;height:60vh">
+    <img class="favMoviesImgs" src="https://image.tmdb.org/t/p/w500${data.poster_path}">
     <div class="displayerDiv" style="display:none">
       <h1>Title : ${data.original_title}</h1>
       <p>Released : ${data.release_date}</p><br>

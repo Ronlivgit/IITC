@@ -49,15 +49,35 @@
         li a:hover {
           background-color: #111;
     }
-      footer {
-        position: absolute;
-        bottom: 0;
-        width: 100vw;
-        height: 5vh;
-        grid-area: footer;
-        background-color: #333;
-        opacity: 85%;
-    }
+    footer {
+      position: absolute;
+      bottom: 0;
+      width: 100vw;
+      height: 5vh;
+      grid-area: footer;
+      background-color: #333;
+      opacity: 85%;
+  }
+  
+  #Socials {
+    padding: 0.5rem;
+    margin: auto;
+    font-size: 2.35em;
+    text-decoration:none;
+  }
+  
+  a {
+    color: rgb(255, 255, 255);
+    text-decoration:none;
+  }
+  
+  #Credits {
+    color: #fff;
+    padding: 10px;
+    font-size: 1em;
+    transform: translate(43vw,-5vh);
+    width: 18vw;
+  }
     /* END OF NAV + Footer */
     #homeTrendingDiv {
         gap: 1.2rem;
