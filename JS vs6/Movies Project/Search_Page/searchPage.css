@@ -130,13 +130,13 @@ width: 22vw;
 }
 
 .searchContainer {
-  height: 25vh;
-  width: 20vw;
+  height: 30vh;
+  width: 22vw;
 }
 
 .searchContainer img {
-  height: 25vh;
-  width: 20vw;
+  height: 30vh;
+  width: 22vw;
 }
 
 #searchForm input {
@@ -203,7 +203,7 @@ nav{
 .searchDisDiv{
   color: #FFF;
   text-align: center;
-  transform: translate(-3vw,-20vh);
+  transform: translate(-2vw,-20vh);
   font-size:1.1rem
 }
 
