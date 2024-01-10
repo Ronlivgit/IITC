@@ -53,7 +53,7 @@ function searchForMovie(movieName){
 }
 //! Add pagination (arrows left right), change numOfPages to currentPage,
 
-function printMultiplePages(pageNumber = 1,movieName = "one piece"){
+function printMultiplePages(pageNumber = 1,movieName = "spiderman"){
   searchMainDiv.innerHTML = ''
   let changeBackGround = false
     for(let i=1;i<=pageNumber;i++){
@@ -83,7 +83,6 @@ function printMultiplePages(pageNumber = 1,movieName = "one piece"){
           displayMovieInfo(".searchContainer",".searchImgs",".searchDisDiv")
         }
         else{
-          console.log(item + "has null poster path");
         }
       }))
     }
@@ -93,7 +92,7 @@ function printMultiplePages(pageNumber = 1,movieName = "one piece"){
     e.preventDefault()
     let movieName = searchInput.value
     console.log(movieName);
-    searchForMovie(1,movieName)
+    searchForMovie(movieName)
   })
   
-  searchForMovie("one piece")
+  searchForMovie()

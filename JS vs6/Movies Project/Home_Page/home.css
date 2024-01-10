@@ -24,6 +24,7 @@ body{
     width: 100vw;
     opacity: 70%;
     background-image:url(space-911785.jpg);
+    filter: brightness(80%);
     background-size: auto;
     z-index: -999;
 }
@@ -42,6 +43,7 @@ nav{
       opacity: 85%;
       overflow: hidden;
       background-color: #333;
+      /* background-color: #ff0000; */
       display: flex;
       justify-content: space-evenly;
       height: 5vh;
@@ -65,10 +67,12 @@ nav{
   footer {
     position: absolute;
     bottom: 0;
+    /* color: #ff0000; */
     width: 100vw;
     height: 5vh;
     grid-area: footer;
     background-color: #333;
+    /* background-color: #f3f3f3; */
     opacity: 85%;
 }
 
@@ -82,6 +86,7 @@ nav{
 a {
   color: rgb(255, 255, 255);
   text-decoration:none;
+  /* color: #ff0000; */
 }
 
 #Credits {
@@ -90,6 +95,7 @@ a {
   font-size: 1.2em;
   transform: translate(43vw,-4.3vh);
   width: 22vw;
+  /* color: #ff0000; */
 }
 /* END OF NAV + Footer */
 #homeTrendingDiv {
@@ -158,12 +164,14 @@ a {
 #paginationDiv button{
   width: 2.2vw;
   height: 2vh;
+  background-color: #e2e2e2;
 }
 
 #timescaleDiv button {
   margin-left: 0.4vw;
   width: 7.6vw;
   height: 2vh;
+  background-color: #e2e2e2;
 }
 
 .homeDisplayDiv{

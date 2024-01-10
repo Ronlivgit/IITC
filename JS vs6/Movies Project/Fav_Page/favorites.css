@@ -107,6 +107,7 @@
     position: absolute;
     width: 100vw;
     height: 100vh;
+    /* background-image: url(../Home_Page/space-911785.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 70%;
