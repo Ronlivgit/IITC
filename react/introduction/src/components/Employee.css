@@ -1,0 +1,25 @@
+.EmployeeDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.EmployeeDiv img{
+    width: 20vw;
+    height: 20vw;
+    border-radius: 99px;
+}
+
+i {
+    font-size: 2em;
+    margin: 6px;
+}
+
+.ourTeam{
+    text-align: center;
+    font-size: 3.8em;
+    color: blue;
+}

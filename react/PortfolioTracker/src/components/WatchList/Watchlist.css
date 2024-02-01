@@ -1,0 +1,32 @@
+body {
+    overflow: hidden;
+}
+
+.watchedToken{
+    width: 35vw;
+    height: 40vh;
+    align-self: center;
+    padding: 20px;
+    border-radius: 30px;
+    color: #fff;
+    text-shadow: 2px 2px 6px #0ef86846;
+    margin-top: 1vh;
+    font-size: 1.1em;
+    /* transform: translate(-1.04vw, -2vh); */
+    background-image: url(https://i.seadn.io/gae/bxqZVGfw3Rmz9OCTjBy9P-QERhHbWVOyXAkv11z20-xqfpuVcc53zC0GxsDzfv-y8QZziu6FfYhdieX6Xwc-wk8Uf1XbH-kNjIoz?auto=format&dpr=1&w=3840);
+    background-size: 115%;
+}
+
+.myWatchedItems{
+    display: flex;
+    overflow: auto;
+    transform: translate(-1vw,6vh);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1em;
+    width: 98vw;
+    height: 93.8vh;
+    opacity: 100%;
+    /* background-color: aqua; */
+}

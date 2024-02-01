@@ -1,0 +1,20 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    padding: 10px;
+}
+
+/* #budgetForm {
+    position: absolute;
+    transform: translate(0,-35vh);
+    gap: 1em;
+} */
+
+#budgetForm{
+    margin-bottom: 5vh;
+}
+
+/* .transactionDiv {
+    margin-top: 12vh;
+} */

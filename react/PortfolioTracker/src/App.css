@@ -1,0 +1,108 @@
+#root {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 2rem;
+  overflow: hidden;
+  text-align: center;
+  /* background-color:cornsilk */
+  background-image: url(https://img.freepik.com/free-photo/dollar-banknotes-frame_1150-6686.jpg?w=1800&t=st=1706282677~exp=1706283277~hmac=a64fb8d7ab25ff636c25ee216ca081950a7b0d24db2a05f4063c647c767f1351);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.navBar {
+  position: fixed;
+  top:0;
+  width: 100vw;
+  height: 5vh;
+  background-color: #333;
+  opacity: 70%;
+  display:flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  left: 0;
+}
+
+a {
+  font-size: 1.3em;
+  align-self: center;
+  color: #ff0606;
+  text-decoration: none;
+}
+
+.logOutBtn{ 
+  color: #ff0606;
+  background-color: #333;
+  font-size: 1.3em;
+}
+
+.removerBTN{
+  font-size: 0.9em;  
+}
+
+.highlightBtn{
+  margin: 15px;
+  color: #333;
+}
+
+.highlightBtn a{
+  color: #333;
+  font-size: 0.9em;
+}
+
+.watchBtn{
+  color: #333;
+  font-size: 0.9em;
+}
+
+/* .highlightedDiv{
+} */
+
+.highlightedToken{
+  background-image: url(https://i.seadn.io/gae/bxqZVGfw3Rmz9OCTjBy9P-QERhHbWVOyXAkv11z20-xqfpuVcc53zC0GxsDzfv-y8QZziu6FfYhdieX6Xwc-wk8Uf1XbH-kNjIoz?auto=format&dpr=1&w=3840);
+  background-size: 105%;
+  color: #fff;
+  text-shadow: 2px 2px 4px #111;
+  margin-top: 8vh;
+  height: 92vh;
+  padding: 10px;
+}
+

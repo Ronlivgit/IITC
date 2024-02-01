@@ -1,0 +1,177 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+}
+
+.resumeFormDiv{
+    background-color: #ffffff8a;
+    border: 2px solid #3333336e;
+    width: 50vw;
+    height: 80vh;
+    position:absolute;
+    top: 5vw;
+    left: 25vw;
+
+}
+
+.h1Resume{
+    text-align: center;
+}
+
+.resumeForm{
+    height: 80vh;
+    width: 50vw;
+    display:flex;
+    flex-direction: column;
+    gap: 1.2em;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.resumeForm input {
+    width: 20vw;
+    height: 3.2dvh;
+}
+
+/* .resumeForm textarea {
+    width: 15vw;
+    height: 2.5dvh;
+    
+} */
+
+/* .resumeForm label {
+    text-align:inherit;
+    position: relative;
+    
+} */
+
+.userInfoSpan{
+    border: 1px solid #3333336e;
+    width: 50vw;
+    position: absolute;
+    top: 20vh;
+}
+
+.splittingSpan{
+    border: 1px solid #3333336e;
+    height: 59.5vh;
+    position: absolute;
+    bottom: 0;
+    left:27vw;
+}
+
+.userInfoSection{
+    /* background-color: cadetblue; */
+    position: absolute;
+    top: 0vh;
+    left: 0;
+    padding: 10px 30px;
+    height: 19vh;
+    width: 20vw;
+    /* background-color: aliceblue; */
+}
+
+.resumeAbout{
+    /* background-color: cadetblue; */
+    position: absolute;
+    /* background-color: #000; */
+    right:-32vw ;
+    top:0;
+    padding: 10px 30px;
+    height: 19vh;
+    width: 22vw;
+
+}
+
+.resumeAbout textarea{
+    height: 16vh;
+    width: 20vw;
+    position: inherit;
+    left: -1vw;
+}
+
+.userEducationSection{
+    /* background-color: blueviolet; */
+    position: absolute;
+    right: 0;
+    top: 21vh;
+    max-height: 55vh;
+    width: 23.5vw;
+    padding: 10px 30px;
+    overflow: auto;
+}
+
+.userEducationSection button{
+    /* background-color: blueviolet; */
+    position: absolute;
+    right: 5.5vw;
+    text-align: center;
+    bottom: 1.5vh;
+}
+
+.userEducationSection input{
+    width: 20vw;
+}
+
+
+.userWorkExpSection{
+    /* background-color: brown; */
+    position: absolute;
+    left: 0vw;
+    top: 21vh;
+    width: 25vw;
+    padding: 10px 20px;
+    overflow: auto;
+}
+
+.userWorkExpSection textarea{
+    width: 20vw;
+    height: 10vh;
+}
+
+.userWorkExpSection input{
+    width: 20vw;
+}
+
+
+.userWorkExpSection button{
+    /* background-color: brown; */
+    position: inherit;
+    left: 4.5vw;
+    bottom: 1.5vh;
+}
+
+.resumeSubmitBtn{
+    position: absolute;
+    bottom: -5vh;
+    left: auto;
+    right: auto;
+    width: 5vw;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+  /* !UserResumes Designs : */
+
+  .userInfoDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: auto;
+    height: auto;
+  }
+  
+  .userInfoDiv p{
+    border: 4px solid #0000003c;
+    border-radius: 20px;
+    padding: 10px;
+    width: auto;
+    width: 40vw;
+  }
