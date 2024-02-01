@@ -1,0 +1,222 @@
+/* !check through dev mode the width of phone,tablet,computer! */
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+#searchBackground{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  opacity: 70%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: -1000;
+}
+
+#cssContainer{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 10% 84% 6%;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "mainArea mainArea mainArea mainArea"
+    "footer footer footer footer";
+}
+
+/* Nav and footer should be used for all different css!! */
+nav{
+  grid-area: header;
+  height: 6vh;
+  font-size: 1.5rem;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    opacity: 85%;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: space-evenly;
+    height: 5vh;
+    align-items: center;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  li a:hover {
+    background-color: #111;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 5vh;
+  grid-area: footer;
+  background-color: #333;
+  opacity: 85%;
+}
+
+#Socials {
+padding: 0.5rem;
+margin: auto;
+font-size: 2.35em;
+text-decoration:none;
+}
+
+a {
+color: rgb(255, 255, 255);
+text-decoration:none;
+}
+
+#Credits {
+color: #fff;
+padding: 10px;
+font-size: 1.2em;
+transform: translate(43vw,-4.3vh);
+width: 22vw;
+}
+/* END OF NAV + Footer */
+
+
+
+#searchForm{
+  width: 100vw;
+  height: 6vh;
+  transform: translate(37vw,4vh);
+  grid-area: nav;
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-align: center;
+  align-content: center;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+#searchPaginationDiv {
+  transform: translate(0vw,-89vh);
+  height: 5vh;
+}
+
+#searchMainDiv{
+  grid-area: mainArea;
+  gap: 1.5rem;
+  width: 100vw;
+  height: 82.8vh;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+  overflow: auto;
+  align-items: center;
+  text-overflow: clip;
+}
+
+.searchContainer {
+  height: 30vh;
+  width: 22vw;
+}
+
+.searchContainer img {
+  height: 30vh;
+  width: 22vw;
+}
+
+#searchForm input {
+  height: 2vh;
+  width: 18vw;
+  margin: 5px;
+}
+
+#searchForm button {
+  width: 3vw;
+  height: 2vh;
+  font-weight: bold;
+}
+
+nav{
+    grid-area: nav;
+    height: 6vh;
+    font-size: 1.5rem;
+}
+
+.displayInfo{
+  text-align: center;
+  margin-top: 1.3vh;
+}
+
+.displayInfo p {
+  margin-top: -1vh;
+}
+
+.displayInfo img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Like BTN */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.like__btn {
+  margin-top: 0.5vh;
+  height: 3.5vh;
+  width: 5.5vw;
+  padding: 10px 15px;
+  background: #0080ff;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 5px;
+  color: #e8efff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 5.8vw;
+}
+
+
+/* .searchDisDiv p span{
+  width: 20vw;
+} */
+.searchDisDiv{
+  color: #FFF;
+  text-align: center;
+  transform: translate(-2vw,-20vh);
+  font-size:1.1rem
+}
+
+.searchParas{
+  background-color: #333333a2;
+  filter: brightness(180%),contrast(150%);
+  text-shadow: 4px 6px 6px #333;
+  height: 70%;
+  z-index: -1;
+  transform: translate(4vw,-2vh);
+  width: 18vw;
+}
+
+::-webkit-scrollbar{
+  opacity: 0%;
+}

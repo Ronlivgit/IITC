@@ -1,0 +1,164 @@
+@media only screen and (max-width:1000px) {
+    /* !check through dev mode the width of phone,tablet,computer! */
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 33% 34% 33% ;
+    grid-template-rows: 6% 88% 6%;
+    grid-template-areas: 
+    "navbar navbar navbar"
+    "mainArea mainArea mainArea"
+    "footer footer footer"
+}
+
+#favMoviesSect{
+  margin-top: 0vh;
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  grid-area: mainArea;
+  gap: 1rem;
+}
+/* Nav and footer should be used for all different css!! */
+nav{
+    grid-area: navbar;
+    height: 6vh;
+    font-size: 1.1em;
+  }
+  
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      opacity: 85%;
+      overflow: hidden;
+      background-color: #333;
+      display: flex;
+      justify-content: space-evenly;
+      height: 5vh;
+      align-items: center;
+    }
+  
+    li {
+      float: left;
+    }
+  
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    li a:hover {
+      background-color: #111;
+}
+  footer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 5vh;
+  grid-area: footer;
+  background-color: #333;
+  opacity: 85%;
+  }
+
+  #Socials {
+  padding: 0.5rem;
+  margin: auto;
+  font-size: 2em;
+  text-decoration:none;
+  }
+
+  a {
+  color: rgb(255, 255, 255);
+  text-decoration:none;
+  }
+
+  #Credits {
+  color: #fff;
+  padding: 10px;
+  font-size: 0.8em;
+  transform: translate(43vw,-6.3vh);
+  width: 35vw;
+  }
+/* END OF NAV + Footer */
+.favMoviesDivs{
+  width: 95vw;
+  height: 65vh;
+  margin-left: 2.5vw;
+  gap: 1rem;
+}
+
+.favMoviesDivs img {
+    width: 95vw;
+    height: 65vh;
+}
+
+#backgroundImgDiv{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 70%;
+  z-index: -99;
+}
+
+/* Like BTN */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Unlike__btn {
+  height: 3.8vh;
+  width: 28.8vw;
+  padding: 10px 15px;
+  background: #0080ff;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 5px;
+  color: #e8efff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+.displayerDiv{
+  width: 95vw;
+  padding-top: 6vh;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  height: 60vh;
+  color: #fff;
+  text-shadow: 2px 4px 4px  #000;
+  font-size: 1.1em;
+  position: relative;
+  text-align: center;
+  transform: translate(0vw,-67.35vh);
+  opacity: 100%;
+}
+
+.displayerDiv h1, p {
+  border-radius: 12px;
+  font-weight: bold;
+  filter: brightness(180%),contrast(150)
+}
+
+::-webkit-scrollbar{
+  opacity: 0%;
+}
+
+}

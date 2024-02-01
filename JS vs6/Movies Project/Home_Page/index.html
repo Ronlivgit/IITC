@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="homeTablet.css">
+    <link rel="stylesheet" href="homePhone.css">
+</head>
+<body>
+    <!-- Home Page index.html -->
+    <div id="homeBackground"></div>
+    <nav id="mainNavBar">
+        <ul>
+          <li><a href="../Home_Page/index.html">Home Page</a></li>
+          <li><a href="../Movie_Page/index.html">Movie Highlight</a></li>
+          <li><a href="../About_Page/index.html">About Us</a></li>
+          <li><a href="../Search_Page/index.html">Search Movies</a></li>
+          <li><a href="../Fav_Page/index.html">Favorites</a></li>
+        </ul>
+    </nav>
+    <section id="homePage">
+        <div id="timescaleDiv">
+            <button id="homePopular">Most Popular</button>
+            <button id="homeDaily">Top Daily</button>
+            <button id="homeWeekly">Top Weekly</button>
+        </div>
+        <div id="paginationDiv">
+            <!-- <button id="backwardBtn">Back</button>
+            <span id="pageIndicator">1</span>
+            <button id="forwardBtn">Next</button> -->
+        </div>
+        <div id="homeTrendingDiv"></div>
+    </section>
+    <footer>
+        <div id="Socials">
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a> 
+            <a href="https://www.linkedin.com/in/ron-livne-266b281b2/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            <a href="https://github.com/Ronlivgit"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+            <a href="mailto:ron.livne58@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        </div>
+        <div id="Credits">
+            <span>All credits reserved to Ron Livne</span>
+        </div>
+    </footer>
+
+    <script type ="module" src="HomePage.js"></script>
+    <script src="https://kit.fontawesome.com/fb34c80d72.js" crossorigin="anonymous"></script>
+    <script type ="module" src="../dataStorage.js"></script>
+</body>
+</html>

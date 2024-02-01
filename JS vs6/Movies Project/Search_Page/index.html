@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Movie Page</title>
+    <link rel="stylesheet" href="searchPage.css">
+    <link rel="stylesheet" href="searchPageTablet.css">
+    <link rel="stylesheet" href="searchPagePhone.css">
+</head>
+<body>
+    <div id="searchBackground"></div>
+    <div id="cssContainer">
+        <div id="searchMainDiv"></div>
+        <nav id="mainNavBar">
+            <ul>
+              <li><a href="../Home_Page/index.html">Home Page</a></li>
+              <li><a href="../Movie_Page/index.html">Movie Highlight</a></li>
+              <li><a href="../About_Page/index.html">About Us</a></li>
+              <li><a href="../Search_Page/index.html">Search Movies</a></li>
+              <li><a href="../Fav_Page/index.html">Favorites</a></li>
+            </ul>
+        </nav>
+        <div id="searchPaginationDiv"></div>
+        <form action="" id="searchForm">
+            <label for="searchInput">Movie's Name : </label>
+            <input type="text" name="searchInput" id="searchInput" placeholder="Movie Name"> 
+            <button id="subButton">Submit</button>
+        </form>
+    </div>
+    
+    <footer>
+        <div id="Socials">
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a> 
+            <a href="https://www.linkedin.com/in/ron-livne-266b281b2/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            <a href="https://github.com/Ronlivgit"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+            <a href="mailto:ron.livne58@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        </div>
+        <div id="Credits">
+            <span>All credits reserved to Ron Livne</span>
+        </div>
+    </footer>
+
+    <script type="module" src="searchPage.js"></script>
+    <script src="https://kit.fontawesome.com/fb34c80d72.js" crossorigin="anonymous"></script>
+    <script type ="module" src="../dataStorage.js"></script>
+</body>
+</html>
